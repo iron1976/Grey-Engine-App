@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"E:/C coding/Grey Engine App/out/build/x64-debug/cmake_install.cmake",
+		"E:/C coding/Grey Engine App/out/build/x64-debug/Grey Engine/cmake_install.cmake",
+		"E:/C coding/Grey Engine App/out/build/x64-debug/Grey Engine/Dependencies/glfw/cmake_install.cmake",
+		"E:/C coding/Grey Engine App/out/build/x64-debug/Grey Engine/Dependencies/glfw/src/cmake_install.cmake",
+		"E:/C coding/Grey Engine App/out/build/x64-debug/Grey Engine/Dependencies/glfw/docs/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

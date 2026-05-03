@@ -1,0 +1,32 @@
+E:/C coding/Grey Engine App/out/build/x64-debug/CMakeFiles/App.dir
+E:/C coding/Grey Engine App/out/build/x64-debug/CMakeFiles/edit_cache.dir
+E:/C coding/Grey Engine App/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
+E:/C coding/Grey Engine App/out/build/x64-debug/CMakeFiles/list_install_components.dir
+E:/C coding/Grey Engine App/out/build/x64-debug/CMakeFiles/install.dir
+E:/C coding/Grey Engine App/out/build/x64-debug/CMakeFiles/install/local.dir
+E:/C coding/Grey Engine App/out/build/x64-debug/Grey Engine/CMakeFiles/glad.dir
+E:/C coding/Grey Engine App/out/build/x64-debug/Grey Engine/CMakeFiles/imgui.dir
+E:/C coding/Grey Engine App/out/build/x64-debug/Grey Engine/CMakeFiles/GreyEngine.dir
+E:/C coding/Grey Engine App/out/build/x64-debug/Grey Engine/CMakeFiles/edit_cache.dir
+E:/C coding/Grey Engine App/out/build/x64-debug/Grey Engine/CMakeFiles/rebuild_cache.dir
+E:/C coding/Grey Engine App/out/build/x64-debug/Grey Engine/CMakeFiles/list_install_components.dir
+E:/C coding/Grey Engine App/out/build/x64-debug/Grey Engine/CMakeFiles/install.dir
+E:/C coding/Grey Engine App/out/build/x64-debug/Grey Engine/CMakeFiles/install/local.dir
+E:/C coding/Grey Engine App/out/build/x64-debug/Grey Engine/Dependencies/glfw/CMakeFiles/uninstall.dir
+E:/C coding/Grey Engine App/out/build/x64-debug/Grey Engine/Dependencies/glfw/CMakeFiles/edit_cache.dir
+E:/C coding/Grey Engine App/out/build/x64-debug/Grey Engine/Dependencies/glfw/CMakeFiles/rebuild_cache.dir
+E:/C coding/Grey Engine App/out/build/x64-debug/Grey Engine/Dependencies/glfw/CMakeFiles/list_install_components.dir
+E:/C coding/Grey Engine App/out/build/x64-debug/Grey Engine/Dependencies/glfw/CMakeFiles/install.dir
+E:/C coding/Grey Engine App/out/build/x64-debug/Grey Engine/Dependencies/glfw/CMakeFiles/install/local.dir
+E:/C coding/Grey Engine App/out/build/x64-debug/Grey Engine/Dependencies/glfw/src/CMakeFiles/glfw.dir
+E:/C coding/Grey Engine App/out/build/x64-debug/Grey Engine/Dependencies/glfw/src/CMakeFiles/update_mappings.dir
+E:/C coding/Grey Engine App/out/build/x64-debug/Grey Engine/Dependencies/glfw/src/CMakeFiles/edit_cache.dir
+E:/C coding/Grey Engine App/out/build/x64-debug/Grey Engine/Dependencies/glfw/src/CMakeFiles/rebuild_cache.dir
+E:/C coding/Grey Engine App/out/build/x64-debug/Grey Engine/Dependencies/glfw/src/CMakeFiles/list_install_components.dir
+E:/C coding/Grey Engine App/out/build/x64-debug/Grey Engine/Dependencies/glfw/src/CMakeFiles/install.dir
+E:/C coding/Grey Engine App/out/build/x64-debug/Grey Engine/Dependencies/glfw/src/CMakeFiles/install/local.dir
+E:/C coding/Grey Engine App/out/build/x64-debug/Grey Engine/Dependencies/glfw/docs/CMakeFiles/edit_cache.dir
+E:/C coding/Grey Engine App/out/build/x64-debug/Grey Engine/Dependencies/glfw/docs/CMakeFiles/rebuild_cache.dir
+E:/C coding/Grey Engine App/out/build/x64-debug/Grey Engine/Dependencies/glfw/docs/CMakeFiles/list_install_components.dir
+E:/C coding/Grey Engine App/out/build/x64-debug/Grey Engine/Dependencies/glfw/docs/CMakeFiles/install.dir
+E:/C coding/Grey Engine App/out/build/x64-debug/Grey Engine/Dependencies/glfw/docs/CMakeFiles/install/local.dir

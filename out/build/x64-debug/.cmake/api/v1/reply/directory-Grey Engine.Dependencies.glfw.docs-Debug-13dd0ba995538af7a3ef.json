@@ -1,0 +1,19 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "Grey Engine/Dependencies/glfw/docs",
+		"source" : "Grey Engine/Dependencies/glfw/docs"
+	}
+}

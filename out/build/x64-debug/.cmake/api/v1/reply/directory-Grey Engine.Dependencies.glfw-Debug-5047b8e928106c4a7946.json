@@ -1,0 +1,105 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"Grey Engine/Dependencies/glfw/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 141,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 144,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 148,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 151,
+				"parent" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include",
+			"paths" : 
+			[
+				"Grey Engine/Dependencies/glfw/include/GLFW"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/glfw3",
+			"paths" : 
+			[
+				"out/build/x64-debug/Grey Engine/Dependencies/glfw/src/glfw3Config.cmake",
+				"out/build/x64-debug/Grey Engine/Dependencies/glfw/src/glfw3ConfigVersion.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/glfw3",
+			"exportName" : "glfwTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "glfw::@d2f26d1225067c988d7f",
+					"index" : 3
+				}
+			],
+			"paths" : 
+			[
+				"Grey Engine/Dependencies/glfw/CMakeFiles/Export/f367bd07922f2ecfc14cf5547f1f7c4e/glfw3Targets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"out/build/x64-debug/Grey Engine/Dependencies/glfw/src/glfw3.pc"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "Grey Engine/Dependencies/glfw",
+		"source" : "Grey Engine/Dependencies/glfw"
+	}
+}
