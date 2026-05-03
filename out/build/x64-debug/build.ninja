@@ -52,7 +52,7 @@ build cmake_object_order_depends_target_App: phony || cmake_object_order_depends
 build CMakeFiles\App.dir\Application\main.cpp.obj: CXX_COMPILER__App_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Application\main.cpp || cmake_object_order_depends_target_App
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Source" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glad\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui\backends"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Source" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glad\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui\backends"
   OBJECT_DIR = CMakeFiles\App.dir
   OBJECT_FILE_DIR = CMakeFiles\App.dir\Application
   TARGET_COMPILE_PDB = CMakeFiles\App.dir\
@@ -67,11 +67,11 @@ build CMakeFiles\App.dir\Application\main.cpp.obj: CXX_COMPILER__App_unscanned_D
 #############################################
 # Link the executable App.exe
 
-build App.exe: CXX_EXECUTABLE_LINKER__App_Debug CMakeFiles\App.dir\Application\main.cpp.obj | Grey$ Engine\GreyEngine.lib Grey$ Engine\glad.lib Grey$ Engine\imgui.lib Grey$ Engine\Dependencies\glfw\src\glfw3.lib || Grey$ Engine\Dependencies\glfw\src\glfw3.lib Grey$ Engine\GreyEngine.lib Grey$ Engine\glad.lib Grey$ Engine\imgui.lib
+build App.exe: CXX_EXECUTABLE_LINKER__App_Debug CMakeFiles\App.dir\Application\main.cpp.obj | GreyEngine\GreyEngine.lib GreyEngine\glad.lib GreyEngine\imgui.lib GreyEngine\Dependencies\glfw\src\glfw3.lib || GreyEngine\Dependencies\glfw\src\glfw3.lib GreyEngine\GreyEngine.lib GreyEngine\glad.lib GreyEngine\imgui.lib
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = "Grey Engine\GreyEngine.lib"  "Grey Engine\glad.lib"  opengl32.lib  "Grey Engine\imgui.lib"  "Grey Engine\Dependencies\glfw\src\glfw3.lib"  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = GreyEngine\GreyEngine.lib  GreyEngine\glad.lib  opengl32.lib  GreyEngine\imgui.lib  GreyEngine\Dependencies\glfw\src\glfw3.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = CMakeFiles\App.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -148,15 +148,15 @@ build install\local: phony CMakeFiles\install\local.util
 
 build cmake_object_order_depends_target_glad: phony || .
 
-build Grey$ Engine\CMakeFiles\glad.dir\Dependencies\glad\src\glad.c.obj: C_COMPILER__glad_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\glad\src\glad.c || cmake_object_order_depends_target_glad
+build GreyEngine\CMakeFiles\glad.dir\Dependencies\glad\src\glad.c.obj: C_COMPILER__glad_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\glad\src\glad.c || cmake_object_order_depends_target_glad
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glad\include"
-  OBJECT_DIR = "Grey Engine\CMakeFiles\glad.dir"
-  OBJECT_FILE_DIR = "Grey Engine\CMakeFiles\glad.dir\Dependencies\glad\src"
-  TARGET_COMPILE_PDB = "Grey Engine\CMakeFiles\glad.dir\glad.pdb"
-  TARGET_PDB = "Grey Engine\glad.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\CMakeFiles\glad.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glad\include"
+  OBJECT_DIR = GreyEngine\CMakeFiles\glad.dir
+  OBJECT_FILE_DIR = GreyEngine\CMakeFiles\glad.dir\Dependencies\glad\src
+  TARGET_COMPILE_PDB = GreyEngine\CMakeFiles\glad.dir\glad.pdb
+  TARGET_PDB = GreyEngine\glad.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\CMakeFiles\glad.dir
 
 
 # =============================================================================
@@ -164,19 +164,19 @@ build Grey$ Engine\CMakeFiles\glad.dir\Dependencies\glad\src\glad.c.obj: C_COMPI
 
 
 #############################################
-# Link the static library Grey Engine\glad.lib
+# Link the static library GreyEngine\glad.lib
 
-build Grey$ Engine\glad.lib: C_STATIC_LIBRARY_LINKER__glad_Debug Grey$ Engine\CMakeFiles\glad.dir\Dependencies\glad\src\glad.c.obj
+build GreyEngine\glad.lib: C_STATIC_LIBRARY_LINKER__glad_Debug GreyEngine\CMakeFiles\glad.dir\Dependencies\glad\src\glad.c.obj
   CONFIG = Debug
   LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI
   LINK_FLAGS = /machine:x64
-  OBJECT_DIR = "Grey Engine\CMakeFiles\glad.dir"
+  OBJECT_DIR = GreyEngine\CMakeFiles\glad.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = "Grey Engine\CMakeFiles\glad.dir\glad.pdb"
-  TARGET_FILE = "Grey Engine\glad.lib"
-  TARGET_PDB = "Grey Engine\glad.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\CMakeFiles\glad.dir"
+  TARGET_COMPILE_PDB = GreyEngine\CMakeFiles\glad.dir\glad.pdb
+  TARGET_FILE = GreyEngine\glad.lib
+  TARGET_PDB = GreyEngine\glad.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\CMakeFiles\glad.dir
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target imgui
@@ -187,65 +187,65 @@ build Grey$ Engine\glad.lib: C_STATIC_LIBRARY_LINKER__glad_Debug Grey$ Engine\CM
 
 build cmake_object_order_depends_target_imgui: phony || cmake_object_order_depends_target_glfw
 
-build Grey$ Engine\CMakeFiles\imgui.dir\Dependencies\imgui\imgui.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\imgui\imgui.cpp || cmake_object_order_depends_target_imgui
+build GreyEngine\CMakeFiles\imgui.dir\Dependencies\imgui\imgui.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\imgui\imgui.cpp || cmake_object_order_depends_target_imgui
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui\backends" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include"
-  OBJECT_DIR = "Grey Engine\CMakeFiles\imgui.dir"
-  OBJECT_FILE_DIR = "Grey Engine\CMakeFiles\imgui.dir\Dependencies\imgui"
-  TARGET_COMPILE_PDB = "Grey Engine\CMakeFiles\imgui.dir\imgui.pdb"
-  TARGET_PDB = "Grey Engine\imgui.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\CMakeFiles\imgui.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui\backends" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include"
+  OBJECT_DIR = GreyEngine\CMakeFiles\imgui.dir
+  OBJECT_FILE_DIR = GreyEngine\CMakeFiles\imgui.dir\Dependencies\imgui
+  TARGET_COMPILE_PDB = GreyEngine\CMakeFiles\imgui.dir\imgui.pdb
+  TARGET_PDB = GreyEngine\imgui.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\CMakeFiles\imgui.dir
 
-build Grey$ Engine\CMakeFiles\imgui.dir\Dependencies\imgui\imgui_draw.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\imgui\imgui_draw.cpp || cmake_object_order_depends_target_imgui
+build GreyEngine\CMakeFiles\imgui.dir\Dependencies\imgui\imgui_draw.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\imgui\imgui_draw.cpp || cmake_object_order_depends_target_imgui
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui\backends" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include"
-  OBJECT_DIR = "Grey Engine\CMakeFiles\imgui.dir"
-  OBJECT_FILE_DIR = "Grey Engine\CMakeFiles\imgui.dir\Dependencies\imgui"
-  TARGET_COMPILE_PDB = "Grey Engine\CMakeFiles\imgui.dir\imgui.pdb"
-  TARGET_PDB = "Grey Engine\imgui.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\CMakeFiles\imgui.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui\backends" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include"
+  OBJECT_DIR = GreyEngine\CMakeFiles\imgui.dir
+  OBJECT_FILE_DIR = GreyEngine\CMakeFiles\imgui.dir\Dependencies\imgui
+  TARGET_COMPILE_PDB = GreyEngine\CMakeFiles\imgui.dir\imgui.pdb
+  TARGET_PDB = GreyEngine\imgui.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\CMakeFiles\imgui.dir
 
-build Grey$ Engine\CMakeFiles\imgui.dir\Dependencies\imgui\imgui_tables.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\imgui\imgui_tables.cpp || cmake_object_order_depends_target_imgui
+build GreyEngine\CMakeFiles\imgui.dir\Dependencies\imgui\imgui_tables.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\imgui\imgui_tables.cpp || cmake_object_order_depends_target_imgui
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui\backends" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include"
-  OBJECT_DIR = "Grey Engine\CMakeFiles\imgui.dir"
-  OBJECT_FILE_DIR = "Grey Engine\CMakeFiles\imgui.dir\Dependencies\imgui"
-  TARGET_COMPILE_PDB = "Grey Engine\CMakeFiles\imgui.dir\imgui.pdb"
-  TARGET_PDB = "Grey Engine\imgui.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\CMakeFiles\imgui.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui\backends" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include"
+  OBJECT_DIR = GreyEngine\CMakeFiles\imgui.dir
+  OBJECT_FILE_DIR = GreyEngine\CMakeFiles\imgui.dir\Dependencies\imgui
+  TARGET_COMPILE_PDB = GreyEngine\CMakeFiles\imgui.dir\imgui.pdb
+  TARGET_PDB = GreyEngine\imgui.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\CMakeFiles\imgui.dir
 
-build Grey$ Engine\CMakeFiles\imgui.dir\Dependencies\imgui\imgui_widgets.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\imgui\imgui_widgets.cpp || cmake_object_order_depends_target_imgui
+build GreyEngine\CMakeFiles\imgui.dir\Dependencies\imgui\imgui_widgets.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\imgui\imgui_widgets.cpp || cmake_object_order_depends_target_imgui
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui\backends" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include"
-  OBJECT_DIR = "Grey Engine\CMakeFiles\imgui.dir"
-  OBJECT_FILE_DIR = "Grey Engine\CMakeFiles\imgui.dir\Dependencies\imgui"
-  TARGET_COMPILE_PDB = "Grey Engine\CMakeFiles\imgui.dir\imgui.pdb"
-  TARGET_PDB = "Grey Engine\imgui.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\CMakeFiles\imgui.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui\backends" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include"
+  OBJECT_DIR = GreyEngine\CMakeFiles\imgui.dir
+  OBJECT_FILE_DIR = GreyEngine\CMakeFiles\imgui.dir\Dependencies\imgui
+  TARGET_COMPILE_PDB = GreyEngine\CMakeFiles\imgui.dir\imgui.pdb
+  TARGET_PDB = GreyEngine\imgui.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\CMakeFiles\imgui.dir
 
-build Grey$ Engine\CMakeFiles\imgui.dir\Dependencies\imgui\backends\imgui_impl_glfw.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\imgui\backends\imgui_impl_glfw.cpp || cmake_object_order_depends_target_imgui
+build GreyEngine\CMakeFiles\imgui.dir\Dependencies\imgui\backends\imgui_impl_glfw.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\imgui\backends\imgui_impl_glfw.cpp || cmake_object_order_depends_target_imgui
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui\backends" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include"
-  OBJECT_DIR = "Grey Engine\CMakeFiles\imgui.dir"
-  OBJECT_FILE_DIR = "Grey Engine\CMakeFiles\imgui.dir\Dependencies\imgui\backends"
-  TARGET_COMPILE_PDB = "Grey Engine\CMakeFiles\imgui.dir\imgui.pdb"
-  TARGET_PDB = "Grey Engine\imgui.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\CMakeFiles\imgui.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui\backends" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include"
+  OBJECT_DIR = GreyEngine\CMakeFiles\imgui.dir
+  OBJECT_FILE_DIR = GreyEngine\CMakeFiles\imgui.dir\Dependencies\imgui\backends
+  TARGET_COMPILE_PDB = GreyEngine\CMakeFiles\imgui.dir\imgui.pdb
+  TARGET_PDB = GreyEngine\imgui.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\CMakeFiles\imgui.dir
 
-build Grey$ Engine\CMakeFiles\imgui.dir\Dependencies\imgui\backends\imgui_impl_opengl3.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\imgui\backends\imgui_impl_opengl3.cpp || cmake_object_order_depends_target_imgui
+build GreyEngine\CMakeFiles\imgui.dir\Dependencies\imgui\backends\imgui_impl_opengl3.cpp.obj: CXX_COMPILER__imgui_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\imgui\backends\imgui_impl_opengl3.cpp || cmake_object_order_depends_target_imgui
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui\backends" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include"
-  OBJECT_DIR = "Grey Engine\CMakeFiles\imgui.dir"
-  OBJECT_FILE_DIR = "Grey Engine\CMakeFiles\imgui.dir\Dependencies\imgui\backends"
-  TARGET_COMPILE_PDB = "Grey Engine\CMakeFiles\imgui.dir\imgui.pdb"
-  TARGET_PDB = "Grey Engine\imgui.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\CMakeFiles\imgui.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui\backends" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include"
+  OBJECT_DIR = GreyEngine\CMakeFiles\imgui.dir
+  OBJECT_FILE_DIR = GreyEngine\CMakeFiles\imgui.dir\Dependencies\imgui\backends
+  TARGET_COMPILE_PDB = GreyEngine\CMakeFiles\imgui.dir\imgui.pdb
+  TARGET_PDB = GreyEngine\imgui.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\CMakeFiles\imgui.dir
 
 
 # =============================================================================
@@ -253,19 +253,19 @@ build Grey$ Engine\CMakeFiles\imgui.dir\Dependencies\imgui\backends\imgui_impl_o
 
 
 #############################################
-# Link the static library Grey Engine\imgui.lib
+# Link the static library GreyEngine\imgui.lib
 
-build Grey$ Engine\imgui.lib: CXX_STATIC_LIBRARY_LINKER__imgui_Debug Grey$ Engine\CMakeFiles\imgui.dir\Dependencies\imgui\imgui.cpp.obj Grey$ Engine\CMakeFiles\imgui.dir\Dependencies\imgui\imgui_draw.cpp.obj Grey$ Engine\CMakeFiles\imgui.dir\Dependencies\imgui\imgui_tables.cpp.obj Grey$ Engine\CMakeFiles\imgui.dir\Dependencies\imgui\imgui_widgets.cpp.obj Grey$ Engine\CMakeFiles\imgui.dir\Dependencies\imgui\backends\imgui_impl_glfw.cpp.obj Grey$ Engine\CMakeFiles\imgui.dir\Dependencies\imgui\backends\imgui_impl_opengl3.cpp.obj || Grey$ Engine\Dependencies\glfw\src\glfw3.lib
+build GreyEngine\imgui.lib: CXX_STATIC_LIBRARY_LINKER__imgui_Debug GreyEngine\CMakeFiles\imgui.dir\Dependencies\imgui\imgui.cpp.obj GreyEngine\CMakeFiles\imgui.dir\Dependencies\imgui\imgui_draw.cpp.obj GreyEngine\CMakeFiles\imgui.dir\Dependencies\imgui\imgui_tables.cpp.obj GreyEngine\CMakeFiles\imgui.dir\Dependencies\imgui\imgui_widgets.cpp.obj GreyEngine\CMakeFiles\imgui.dir\Dependencies\imgui\backends\imgui_impl_glfw.cpp.obj GreyEngine\CMakeFiles\imgui.dir\Dependencies\imgui\backends\imgui_impl_opengl3.cpp.obj || GreyEngine\Dependencies\glfw\src\glfw3.lib
   CONFIG = Debug
   LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
   LINK_FLAGS = /machine:x64
-  OBJECT_DIR = "Grey Engine\CMakeFiles\imgui.dir"
+  OBJECT_DIR = GreyEngine\CMakeFiles\imgui.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = "Grey Engine\CMakeFiles\imgui.dir\imgui.pdb"
-  TARGET_FILE = "Grey Engine\imgui.lib"
-  TARGET_PDB = "Grey Engine\imgui.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\CMakeFiles\imgui.dir"
+  TARGET_COMPILE_PDB = GreyEngine\CMakeFiles\imgui.dir\imgui.pdb
+  TARGET_FILE = GreyEngine\imgui.lib
+  TARGET_PDB = GreyEngine\imgui.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\CMakeFiles\imgui.dir
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target GreyEngine
@@ -276,155 +276,155 @@ build Grey$ Engine\imgui.lib: CXX_STATIC_LIBRARY_LINKER__imgui_Debug Grey$ Engin
 
 build cmake_object_order_depends_target_GreyEngine: phony || cmake_object_order_depends_target_glad cmake_object_order_depends_target_glfw cmake_object_order_depends_target_imgui
 
-build Grey$ Engine\CMakeFiles\GreyEngine.dir\Source\Core\Application\Application.cpp.obj: CXX_COMPILER__GreyEngine_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Source\Core\Application\Application.cpp || cmake_object_order_depends_target_GreyEngine
+build GreyEngine\CMakeFiles\GreyEngine.dir\Source\Core\Application\Application.cpp.obj: CXX_COMPILER__GreyEngine_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Source\Core\Application\Application.cpp || cmake_object_order_depends_target_GreyEngine
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Source" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glm" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\stb_image" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glad\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui\backends"
-  OBJECT_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir"
-  OBJECT_FILE_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir\Source\Core\Application"
-  TARGET_COMPILE_PDB = "Grey Engine\CMakeFiles\GreyEngine.dir\GreyEngine.pdb"
-  TARGET_PDB = "Grey Engine\GreyEngine.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Source" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glm" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\stb_image" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glad\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui\backends"
+  OBJECT_DIR = GreyEngine\CMakeFiles\GreyEngine.dir
+  OBJECT_FILE_DIR = GreyEngine\CMakeFiles\GreyEngine.dir\Source\Core\Application
+  TARGET_COMPILE_PDB = GreyEngine\CMakeFiles\GreyEngine.dir\GreyEngine.pdb
+  TARGET_PDB = GreyEngine\GreyEngine.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\CMakeFiles\GreyEngine.dir
 
-build Grey$ Engine\CMakeFiles\GreyEngine.dir\Source\Core\Window\Window.cpp.obj: CXX_COMPILER__GreyEngine_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Source\Core\Window\Window.cpp || cmake_object_order_depends_target_GreyEngine
+build GreyEngine\CMakeFiles\GreyEngine.dir\Source\Core\Window\Window.cpp.obj: CXX_COMPILER__GreyEngine_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Source\Core\Window\Window.cpp || cmake_object_order_depends_target_GreyEngine
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Source" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glm" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\stb_image" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glad\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui\backends"
-  OBJECT_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir"
-  OBJECT_FILE_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir\Source\Core\Window"
-  TARGET_COMPILE_PDB = "Grey Engine\CMakeFiles\GreyEngine.dir\GreyEngine.pdb"
-  TARGET_PDB = "Grey Engine\GreyEngine.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Source" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glm" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\stb_image" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glad\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui\backends"
+  OBJECT_DIR = GreyEngine\CMakeFiles\GreyEngine.dir
+  OBJECT_FILE_DIR = GreyEngine\CMakeFiles\GreyEngine.dir\Source\Core\Window
+  TARGET_COMPILE_PDB = GreyEngine\CMakeFiles\GreyEngine.dir\GreyEngine.pdb
+  TARGET_PDB = GreyEngine\GreyEngine.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\CMakeFiles\GreyEngine.dir
 
-build Grey$ Engine\CMakeFiles\GreyEngine.dir\Source\Core\Renderer\Renderer.cpp.obj: CXX_COMPILER__GreyEngine_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Source\Core\Renderer\Renderer.cpp || cmake_object_order_depends_target_GreyEngine
+build GreyEngine\CMakeFiles\GreyEngine.dir\Source\Core\Renderer\Renderer.cpp.obj: CXX_COMPILER__GreyEngine_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Source\Core\Renderer\Renderer.cpp || cmake_object_order_depends_target_GreyEngine
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Source" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glm" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\stb_image" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glad\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui\backends"
-  OBJECT_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir"
-  OBJECT_FILE_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir\Source\Core\Renderer"
-  TARGET_COMPILE_PDB = "Grey Engine\CMakeFiles\GreyEngine.dir\GreyEngine.pdb"
-  TARGET_PDB = "Grey Engine\GreyEngine.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Source" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glm" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\stb_image" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glad\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui\backends"
+  OBJECT_DIR = GreyEngine\CMakeFiles\GreyEngine.dir
+  OBJECT_FILE_DIR = GreyEngine\CMakeFiles\GreyEngine.dir\Source\Core\Renderer
+  TARGET_COMPILE_PDB = GreyEngine\CMakeFiles\GreyEngine.dir\GreyEngine.pdb
+  TARGET_PDB = GreyEngine\GreyEngine.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\CMakeFiles\GreyEngine.dir
 
-build Grey$ Engine\CMakeFiles\GreyEngine.dir\Source\Core\Camera\Camera.cpp.obj: CXX_COMPILER__GreyEngine_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Source\Core\Camera\Camera.cpp || cmake_object_order_depends_target_GreyEngine
+build GreyEngine\CMakeFiles\GreyEngine.dir\Source\Core\Camera\Camera.cpp.obj: CXX_COMPILER__GreyEngine_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Source\Core\Camera\Camera.cpp || cmake_object_order_depends_target_GreyEngine
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Source" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glm" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\stb_image" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glad\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui\backends"
-  OBJECT_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir"
-  OBJECT_FILE_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir\Source\Core\Camera"
-  TARGET_COMPILE_PDB = "Grey Engine\CMakeFiles\GreyEngine.dir\GreyEngine.pdb"
-  TARGET_PDB = "Grey Engine\GreyEngine.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Source" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glm" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\stb_image" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glad\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui\backends"
+  OBJECT_DIR = GreyEngine\CMakeFiles\GreyEngine.dir
+  OBJECT_FILE_DIR = GreyEngine\CMakeFiles\GreyEngine.dir\Source\Core\Camera
+  TARGET_COMPILE_PDB = GreyEngine\CMakeFiles\GreyEngine.dir\GreyEngine.pdb
+  TARGET_PDB = GreyEngine\GreyEngine.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\CMakeFiles\GreyEngine.dir
 
-build Grey$ Engine\CMakeFiles\GreyEngine.dir\Source\Core\Camera\CameraController.cpp.obj: CXX_COMPILER__GreyEngine_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Source\Core\Camera\CameraController.cpp || cmake_object_order_depends_target_GreyEngine
+build GreyEngine\CMakeFiles\GreyEngine.dir\Source\Core\Camera\CameraController.cpp.obj: CXX_COMPILER__GreyEngine_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Source\Core\Camera\CameraController.cpp || cmake_object_order_depends_target_GreyEngine
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Source" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glm" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\stb_image" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glad\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui\backends"
-  OBJECT_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir"
-  OBJECT_FILE_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir\Source\Core\Camera"
-  TARGET_COMPILE_PDB = "Grey Engine\CMakeFiles\GreyEngine.dir\GreyEngine.pdb"
-  TARGET_PDB = "Grey Engine\GreyEngine.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Source" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glm" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\stb_image" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glad\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui\backends"
+  OBJECT_DIR = GreyEngine\CMakeFiles\GreyEngine.dir
+  OBJECT_FILE_DIR = GreyEngine\CMakeFiles\GreyEngine.dir\Source\Core\Camera
+  TARGET_COMPILE_PDB = GreyEngine\CMakeFiles\GreyEngine.dir\GreyEngine.pdb
+  TARGET_PDB = GreyEngine\GreyEngine.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\CMakeFiles\GreyEngine.dir
 
-build Grey$ Engine\CMakeFiles\GreyEngine.dir\Source\AssetControl\Mesh.cpp.obj: CXX_COMPILER__GreyEngine_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Source\AssetControl\Mesh.cpp || cmake_object_order_depends_target_GreyEngine
+build GreyEngine\CMakeFiles\GreyEngine.dir\Source\AssetControl\Mesh.cpp.obj: CXX_COMPILER__GreyEngine_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Source\AssetControl\Mesh.cpp || cmake_object_order_depends_target_GreyEngine
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Source" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glm" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\stb_image" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glad\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui\backends"
-  OBJECT_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir"
-  OBJECT_FILE_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir\Source\AssetControl"
-  TARGET_COMPILE_PDB = "Grey Engine\CMakeFiles\GreyEngine.dir\GreyEngine.pdb"
-  TARGET_PDB = "Grey Engine\GreyEngine.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Source" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glm" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\stb_image" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glad\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui\backends"
+  OBJECT_DIR = GreyEngine\CMakeFiles\GreyEngine.dir
+  OBJECT_FILE_DIR = GreyEngine\CMakeFiles\GreyEngine.dir\Source\AssetControl
+  TARGET_COMPILE_PDB = GreyEngine\CMakeFiles\GreyEngine.dir\GreyEngine.pdb
+  TARGET_PDB = GreyEngine\GreyEngine.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\CMakeFiles\GreyEngine.dir
 
-build Grey$ Engine\CMakeFiles\GreyEngine.dir\Source\AssetControl\OBJLoader.cpp.obj: CXX_COMPILER__GreyEngine_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Source\AssetControl\OBJLoader.cpp || cmake_object_order_depends_target_GreyEngine
+build GreyEngine\CMakeFiles\GreyEngine.dir\Source\AssetControl\OBJLoader.cpp.obj: CXX_COMPILER__GreyEngine_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Source\AssetControl\OBJLoader.cpp || cmake_object_order_depends_target_GreyEngine
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Source" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glm" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\stb_image" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glad\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui\backends"
-  OBJECT_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir"
-  OBJECT_FILE_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir\Source\AssetControl"
-  TARGET_COMPILE_PDB = "Grey Engine\CMakeFiles\GreyEngine.dir\GreyEngine.pdb"
-  TARGET_PDB = "Grey Engine\GreyEngine.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Source" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glm" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\stb_image" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glad\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui\backends"
+  OBJECT_DIR = GreyEngine\CMakeFiles\GreyEngine.dir
+  OBJECT_FILE_DIR = GreyEngine\CMakeFiles\GreyEngine.dir\Source\AssetControl
+  TARGET_COMPILE_PDB = GreyEngine\CMakeFiles\GreyEngine.dir\GreyEngine.pdb
+  TARGET_PDB = GreyEngine\GreyEngine.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\CMakeFiles\GreyEngine.dir
 
-build Grey$ Engine\CMakeFiles\GreyEngine.dir\Source\Platform\Windows\WindowsWindow.cpp.obj: CXX_COMPILER__GreyEngine_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Source\Platform\Windows\WindowsWindow.cpp || cmake_object_order_depends_target_GreyEngine
+build GreyEngine\CMakeFiles\GreyEngine.dir\Source\Platform\Windows\WindowsWindow.cpp.obj: CXX_COMPILER__GreyEngine_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Source\Platform\Windows\WindowsWindow.cpp || cmake_object_order_depends_target_GreyEngine
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Source" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glm" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\stb_image" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glad\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui\backends"
-  OBJECT_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir"
-  OBJECT_FILE_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir\Source\Platform\Windows"
-  TARGET_COMPILE_PDB = "Grey Engine\CMakeFiles\GreyEngine.dir\GreyEngine.pdb"
-  TARGET_PDB = "Grey Engine\GreyEngine.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Source" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glm" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\stb_image" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glad\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui\backends"
+  OBJECT_DIR = GreyEngine\CMakeFiles\GreyEngine.dir
+  OBJECT_FILE_DIR = GreyEngine\CMakeFiles\GreyEngine.dir\Source\Platform\Windows
+  TARGET_COMPILE_PDB = GreyEngine\CMakeFiles\GreyEngine.dir\GreyEngine.pdb
+  TARGET_PDB = GreyEngine\GreyEngine.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\CMakeFiles\GreyEngine.dir
 
-build Grey$ Engine\CMakeFiles\GreyEngine.dir\Source\Platform\Windows\WindowsInput.cpp.obj: CXX_COMPILER__GreyEngine_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Source\Platform\Windows\WindowsInput.cpp || cmake_object_order_depends_target_GreyEngine
+build GreyEngine\CMakeFiles\GreyEngine.dir\Source\Platform\Windows\WindowsInput.cpp.obj: CXX_COMPILER__GreyEngine_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Source\Platform\Windows\WindowsInput.cpp || cmake_object_order_depends_target_GreyEngine
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Source" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glm" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\stb_image" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glad\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui\backends"
-  OBJECT_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir"
-  OBJECT_FILE_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir\Source\Platform\Windows"
-  TARGET_COMPILE_PDB = "Grey Engine\CMakeFiles\GreyEngine.dir\GreyEngine.pdb"
-  TARGET_PDB = "Grey Engine\GreyEngine.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Source" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glm" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\stb_image" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glad\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui\backends"
+  OBJECT_DIR = GreyEngine\CMakeFiles\GreyEngine.dir
+  OBJECT_FILE_DIR = GreyEngine\CMakeFiles\GreyEngine.dir\Source\Platform\Windows
+  TARGET_COMPILE_PDB = GreyEngine\CMakeFiles\GreyEngine.dir\GreyEngine.pdb
+  TARGET_PDB = GreyEngine\GreyEngine.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\CMakeFiles\GreyEngine.dir
 
-build Grey$ Engine\CMakeFiles\GreyEngine.dir\Source\Platform\OpenGL\OpenGLRendererAPI.cpp.obj: CXX_COMPILER__GreyEngine_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Source\Platform\OpenGL\OpenGLRendererAPI.cpp || cmake_object_order_depends_target_GreyEngine
+build GreyEngine\CMakeFiles\GreyEngine.dir\Source\Platform\OpenGL\OpenGLRendererAPI.cpp.obj: CXX_COMPILER__GreyEngine_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Source\Platform\OpenGL\OpenGLRendererAPI.cpp || cmake_object_order_depends_target_GreyEngine
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Source" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glm" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\stb_image" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glad\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui\backends"
-  OBJECT_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir"
-  OBJECT_FILE_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir\Source\Platform\OpenGL"
-  TARGET_COMPILE_PDB = "Grey Engine\CMakeFiles\GreyEngine.dir\GreyEngine.pdb"
-  TARGET_PDB = "Grey Engine\GreyEngine.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Source" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glm" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\stb_image" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glad\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui\backends"
+  OBJECT_DIR = GreyEngine\CMakeFiles\GreyEngine.dir
+  OBJECT_FILE_DIR = GreyEngine\CMakeFiles\GreyEngine.dir\Source\Platform\OpenGL
+  TARGET_COMPILE_PDB = GreyEngine\CMakeFiles\GreyEngine.dir\GreyEngine.pdb
+  TARGET_PDB = GreyEngine\GreyEngine.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\CMakeFiles\GreyEngine.dir
 
-build Grey$ Engine\CMakeFiles\GreyEngine.dir\Source\Platform\OpenGL\OpenGLVertexBuffer.cpp.obj: CXX_COMPILER__GreyEngine_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Source\Platform\OpenGL\OpenGLVertexBuffer.cpp || cmake_object_order_depends_target_GreyEngine
+build GreyEngine\CMakeFiles\GreyEngine.dir\Source\Platform\OpenGL\OpenGLVertexBuffer.cpp.obj: CXX_COMPILER__GreyEngine_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Source\Platform\OpenGL\OpenGLVertexBuffer.cpp || cmake_object_order_depends_target_GreyEngine
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Source" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glm" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\stb_image" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glad\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui\backends"
-  OBJECT_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir"
-  OBJECT_FILE_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir\Source\Platform\OpenGL"
-  TARGET_COMPILE_PDB = "Grey Engine\CMakeFiles\GreyEngine.dir\GreyEngine.pdb"
-  TARGET_PDB = "Grey Engine\GreyEngine.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Source" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glm" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\stb_image" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glad\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui\backends"
+  OBJECT_DIR = GreyEngine\CMakeFiles\GreyEngine.dir
+  OBJECT_FILE_DIR = GreyEngine\CMakeFiles\GreyEngine.dir\Source\Platform\OpenGL
+  TARGET_COMPILE_PDB = GreyEngine\CMakeFiles\GreyEngine.dir\GreyEngine.pdb
+  TARGET_PDB = GreyEngine\GreyEngine.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\CMakeFiles\GreyEngine.dir
 
-build Grey$ Engine\CMakeFiles\GreyEngine.dir\Source\Platform\OpenGL\OpenGLIndexBuffer.cpp.obj: CXX_COMPILER__GreyEngine_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Source\Platform\OpenGL\OpenGLIndexBuffer.cpp || cmake_object_order_depends_target_GreyEngine
+build GreyEngine\CMakeFiles\GreyEngine.dir\Source\Platform\OpenGL\OpenGLIndexBuffer.cpp.obj: CXX_COMPILER__GreyEngine_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Source\Platform\OpenGL\OpenGLIndexBuffer.cpp || cmake_object_order_depends_target_GreyEngine
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Source" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glm" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\stb_image" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glad\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui\backends"
-  OBJECT_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir"
-  OBJECT_FILE_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir\Source\Platform\OpenGL"
-  TARGET_COMPILE_PDB = "Grey Engine\CMakeFiles\GreyEngine.dir\GreyEngine.pdb"
-  TARGET_PDB = "Grey Engine\GreyEngine.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Source" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glm" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\stb_image" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glad\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui\backends"
+  OBJECT_DIR = GreyEngine\CMakeFiles\GreyEngine.dir
+  OBJECT_FILE_DIR = GreyEngine\CMakeFiles\GreyEngine.dir\Source\Platform\OpenGL
+  TARGET_COMPILE_PDB = GreyEngine\CMakeFiles\GreyEngine.dir\GreyEngine.pdb
+  TARGET_PDB = GreyEngine\GreyEngine.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\CMakeFiles\GreyEngine.dir
 
-build Grey$ Engine\CMakeFiles\GreyEngine.dir\Source\Platform\OpenGL\OpenGLVertexArrayBuffer.cpp.obj: CXX_COMPILER__GreyEngine_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Source\Platform\OpenGL\OpenGLVertexArrayBuffer.cpp || cmake_object_order_depends_target_GreyEngine
+build GreyEngine\CMakeFiles\GreyEngine.dir\Source\Platform\OpenGL\OpenGLVertexArrayBuffer.cpp.obj: CXX_COMPILER__GreyEngine_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Source\Platform\OpenGL\OpenGLVertexArrayBuffer.cpp || cmake_object_order_depends_target_GreyEngine
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Source" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glm" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\stb_image" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glad\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui\backends"
-  OBJECT_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir"
-  OBJECT_FILE_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir\Source\Platform\OpenGL"
-  TARGET_COMPILE_PDB = "Grey Engine\CMakeFiles\GreyEngine.dir\GreyEngine.pdb"
-  TARGET_PDB = "Grey Engine\GreyEngine.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Source" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glm" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\stb_image" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glad\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui\backends"
+  OBJECT_DIR = GreyEngine\CMakeFiles\GreyEngine.dir
+  OBJECT_FILE_DIR = GreyEngine\CMakeFiles\GreyEngine.dir\Source\Platform\OpenGL
+  TARGET_COMPILE_PDB = GreyEngine\CMakeFiles\GreyEngine.dir\GreyEngine.pdb
+  TARGET_PDB = GreyEngine\GreyEngine.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\CMakeFiles\GreyEngine.dir
 
-build Grey$ Engine\CMakeFiles\GreyEngine.dir\Source\Platform\OpenGL\OpenGLShader.cpp.obj: CXX_COMPILER__GreyEngine_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Source\Platform\OpenGL\OpenGLShader.cpp || cmake_object_order_depends_target_GreyEngine
+build GreyEngine\CMakeFiles\GreyEngine.dir\Source\Platform\OpenGL\OpenGLShader.cpp.obj: CXX_COMPILER__GreyEngine_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Source\Platform\OpenGL\OpenGLShader.cpp || cmake_object_order_depends_target_GreyEngine
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Source" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glm" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\stb_image" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glad\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui\backends"
-  OBJECT_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir"
-  OBJECT_FILE_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir\Source\Platform\OpenGL"
-  TARGET_COMPILE_PDB = "Grey Engine\CMakeFiles\GreyEngine.dir\GreyEngine.pdb"
-  TARGET_PDB = "Grey Engine\GreyEngine.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Source" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glm" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\stb_image" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glad\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui\backends"
+  OBJECT_DIR = GreyEngine\CMakeFiles\GreyEngine.dir
+  OBJECT_FILE_DIR = GreyEngine\CMakeFiles\GreyEngine.dir\Source\Platform\OpenGL
+  TARGET_COMPILE_PDB = GreyEngine\CMakeFiles\GreyEngine.dir\GreyEngine.pdb
+  TARGET_PDB = GreyEngine\GreyEngine.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\CMakeFiles\GreyEngine.dir
 
-build Grey$ Engine\CMakeFiles\GreyEngine.dir\Source\Platform\OpenGL\OpenGLTexture.cpp.obj: CXX_COMPILER__GreyEngine_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Source\Platform\OpenGL\OpenGLTexture.cpp || cmake_object_order_depends_target_GreyEngine
+build GreyEngine\CMakeFiles\GreyEngine.dir\Source\Platform\OpenGL\OpenGLTexture.cpp.obj: CXX_COMPILER__GreyEngine_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Source\Platform\OpenGL\OpenGLTexture.cpp || cmake_object_order_depends_target_GreyEngine
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Source" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glm" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\stb_image" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glad\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\imgui\backends"
-  OBJECT_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir"
-  OBJECT_FILE_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir\Source\Platform\OpenGL"
-  TARGET_COMPILE_PDB = "Grey Engine\CMakeFiles\GreyEngine.dir\GreyEngine.pdb"
-  TARGET_PDB = "Grey Engine\GreyEngine.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Source" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glm" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\stb_image" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glad\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\imgui\backends"
+  OBJECT_DIR = GreyEngine\CMakeFiles\GreyEngine.dir
+  OBJECT_FILE_DIR = GreyEngine\CMakeFiles\GreyEngine.dir\Source\Platform\OpenGL
+  TARGET_COMPILE_PDB = GreyEngine\CMakeFiles\GreyEngine.dir\GreyEngine.pdb
+  TARGET_PDB = GreyEngine\GreyEngine.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\CMakeFiles\GreyEngine.dir
 
 
 # =============================================================================
@@ -432,147 +432,147 @@ build Grey$ Engine\CMakeFiles\GreyEngine.dir\Source\Platform\OpenGL\OpenGLTextur
 
 
 #############################################
-# Link the static library Grey Engine\GreyEngine.lib
+# Link the static library GreyEngine\GreyEngine.lib
 
-build Grey$ Engine\GreyEngine.lib: CXX_STATIC_LIBRARY_LINKER__GreyEngine_Debug Grey$ Engine\CMakeFiles\GreyEngine.dir\Source\Core\Application\Application.cpp.obj Grey$ Engine\CMakeFiles\GreyEngine.dir\Source\Core\Window\Window.cpp.obj Grey$ Engine\CMakeFiles\GreyEngine.dir\Source\Core\Renderer\Renderer.cpp.obj Grey$ Engine\CMakeFiles\GreyEngine.dir\Source\Core\Camera\Camera.cpp.obj Grey$ Engine\CMakeFiles\GreyEngine.dir\Source\Core\Camera\CameraController.cpp.obj Grey$ Engine\CMakeFiles\GreyEngine.dir\Source\AssetControl\Mesh.cpp.obj Grey$ Engine\CMakeFiles\GreyEngine.dir\Source\AssetControl\OBJLoader.cpp.obj Grey$ Engine\CMakeFiles\GreyEngine.dir\Source\Platform\Windows\WindowsWindow.cpp.obj Grey$ Engine\CMakeFiles\GreyEngine.dir\Source\Platform\Windows\WindowsInput.cpp.obj Grey$ Engine\CMakeFiles\GreyEngine.dir\Source\Platform\OpenGL\OpenGLRendererAPI.cpp.obj Grey$ Engine\CMakeFiles\GreyEngine.dir\Source\Platform\OpenGL\OpenGLVertexBuffer.cpp.obj Grey$ Engine\CMakeFiles\GreyEngine.dir\Source\Platform\OpenGL\OpenGLIndexBuffer.cpp.obj Grey$ Engine\CMakeFiles\GreyEngine.dir\Source\Platform\OpenGL\OpenGLVertexArrayBuffer.cpp.obj Grey$ Engine\CMakeFiles\GreyEngine.dir\Source\Platform\OpenGL\OpenGLShader.cpp.obj Grey$ Engine\CMakeFiles\GreyEngine.dir\Source\Platform\OpenGL\OpenGLTexture.cpp.obj || Grey$ Engine\Dependencies\glfw\src\glfw3.lib Grey$ Engine\glad.lib Grey$ Engine\imgui.lib
+build GreyEngine\GreyEngine.lib: CXX_STATIC_LIBRARY_LINKER__GreyEngine_Debug GreyEngine\CMakeFiles\GreyEngine.dir\Source\Core\Application\Application.cpp.obj GreyEngine\CMakeFiles\GreyEngine.dir\Source\Core\Window\Window.cpp.obj GreyEngine\CMakeFiles\GreyEngine.dir\Source\Core\Renderer\Renderer.cpp.obj GreyEngine\CMakeFiles\GreyEngine.dir\Source\Core\Camera\Camera.cpp.obj GreyEngine\CMakeFiles\GreyEngine.dir\Source\Core\Camera\CameraController.cpp.obj GreyEngine\CMakeFiles\GreyEngine.dir\Source\AssetControl\Mesh.cpp.obj GreyEngine\CMakeFiles\GreyEngine.dir\Source\AssetControl\OBJLoader.cpp.obj GreyEngine\CMakeFiles\GreyEngine.dir\Source\Platform\Windows\WindowsWindow.cpp.obj GreyEngine\CMakeFiles\GreyEngine.dir\Source\Platform\Windows\WindowsInput.cpp.obj GreyEngine\CMakeFiles\GreyEngine.dir\Source\Platform\OpenGL\OpenGLRendererAPI.cpp.obj GreyEngine\CMakeFiles\GreyEngine.dir\Source\Platform\OpenGL\OpenGLVertexBuffer.cpp.obj GreyEngine\CMakeFiles\GreyEngine.dir\Source\Platform\OpenGL\OpenGLIndexBuffer.cpp.obj GreyEngine\CMakeFiles\GreyEngine.dir\Source\Platform\OpenGL\OpenGLVertexArrayBuffer.cpp.obj GreyEngine\CMakeFiles\GreyEngine.dir\Source\Platform\OpenGL\OpenGLShader.cpp.obj GreyEngine\CMakeFiles\GreyEngine.dir\Source\Platform\OpenGL\OpenGLTexture.cpp.obj || GreyEngine\Dependencies\glfw\src\glfw3.lib GreyEngine\glad.lib GreyEngine\imgui.lib
   CONFIG = Debug
   LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
   LINK_FLAGS = /machine:x64
-  OBJECT_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir"
+  OBJECT_DIR = GreyEngine\CMakeFiles\GreyEngine.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = "Grey Engine\CMakeFiles\GreyEngine.dir\GreyEngine.pdb"
-  TARGET_FILE = "Grey Engine\GreyEngine.lib"
-  TARGET_PDB = "Grey Engine\GreyEngine.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\CMakeFiles\GreyEngine.dir"
+  TARGET_COMPILE_PDB = GreyEngine\CMakeFiles\GreyEngine.dir\GreyEngine.pdb
+  TARGET_FILE = GreyEngine\GreyEngine.lib
+  TARGET_PDB = GreyEngine\GreyEngine.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\CMakeFiles\GreyEngine.dir
 
 
 #############################################
 # Utility command for edit_cache
 
-build Grey$ Engine\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+build GreyEngine\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build Grey$ Engine\edit_cache: phony Grey$ Engine\CMakeFiles\edit_cache.util
+build GreyEngine\edit_cache: phony GreyEngine\CMakeFiles\edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build Grey$ Engine\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"E:\C coding\Grey Engine App" -B"E:\C coding\Grey Engine App\out\build\x64-debug""
+build GreyEngine\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"E:\C coding\Grey Engine App" -B"E:\C coding\Grey Engine App\out\build\x64-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build Grey$ Engine\rebuild_cache: phony Grey$ Engine\CMakeFiles\rebuild_cache.util
+build GreyEngine\rebuild_cache: phony GreyEngine\CMakeFiles\rebuild_cache.util
 
 
 #############################################
 # Utility command for list_install_components
 
-build Grey$ Engine\list_install_components: phony
+build GreyEngine\list_install_components: phony
 
 
 #############################################
 # Utility command for install
 
-build Grey$ Engine\CMakeFiles\install.util: CUSTOM_COMMAND Grey$ Engine\all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+build GreyEngine\CMakeFiles\install.util: CUSTOM_COMMAND GreyEngine\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
 
-build Grey$ Engine\install: phony Grey$ Engine\CMakeFiles\install.util
+build GreyEngine\install: phony GreyEngine\CMakeFiles\install.util
 
 
 #############################################
 # Utility command for install/local
 
-build Grey$ Engine\CMakeFiles\install\local.util: CUSTOM_COMMAND Grey$ Engine\all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+build GreyEngine\CMakeFiles\install\local.util: CUSTOM_COMMAND GreyEngine\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
 
-build Grey$ Engine\install\local: phony Grey$ Engine\CMakeFiles\install\local.util
+build GreyEngine\install\local: phony GreyEngine\CMakeFiles\install\local.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# E:/C coding/Grey Engine App/Grey Engine/CMakeLists.txt
+# E:/C coding/Grey Engine App/GreyEngine/CMakeLists.txt
 # =============================================================================
 
 
 #############################################
 # Utility command for uninstall
 
-build Grey$ Engine\Dependencies\glfw\uninstall: phony Grey$ Engine\Dependencies\glfw\CMakeFiles\uninstall
+build GreyEngine\Dependencies\glfw\uninstall: phony GreyEngine\Dependencies\glfw\CMakeFiles\uninstall
 
 
 #############################################
 # Utility command for edit_cache
 
-build Grey$ Engine\Dependencies\glfw\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine\Dependencies\glfw" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+build GreyEngine\Dependencies\glfw\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine\Dependencies\glfw" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build Grey$ Engine\Dependencies\glfw\edit_cache: phony Grey$ Engine\Dependencies\glfw\CMakeFiles\edit_cache.util
+build GreyEngine\Dependencies\glfw\edit_cache: phony GreyEngine\Dependencies\glfw\CMakeFiles\edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build Grey$ Engine\Dependencies\glfw\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine\Dependencies\glfw" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"E:\C coding\Grey Engine App" -B"E:\C coding\Grey Engine App\out\build\x64-debug""
+build GreyEngine\Dependencies\glfw\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine\Dependencies\glfw" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"E:\C coding\Grey Engine App" -B"E:\C coding\Grey Engine App\out\build\x64-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build Grey$ Engine\Dependencies\glfw\rebuild_cache: phony Grey$ Engine\Dependencies\glfw\CMakeFiles\rebuild_cache.util
+build GreyEngine\Dependencies\glfw\rebuild_cache: phony GreyEngine\Dependencies\glfw\CMakeFiles\rebuild_cache.util
 
 
 #############################################
 # Utility command for list_install_components
 
-build Grey$ Engine\Dependencies\glfw\list_install_components: phony
+build GreyEngine\Dependencies\glfw\list_install_components: phony
 
 
 #############################################
 # Utility command for install
 
-build Grey$ Engine\Dependencies\glfw\CMakeFiles\install.util: CUSTOM_COMMAND Grey$ Engine\Dependencies\glfw\all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine\Dependencies\glfw" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+build GreyEngine\Dependencies\glfw\CMakeFiles\install.util: CUSTOM_COMMAND GreyEngine\Dependencies\glfw\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine\Dependencies\glfw" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
 
-build Grey$ Engine\Dependencies\glfw\install: phony Grey$ Engine\Dependencies\glfw\CMakeFiles\install.util
+build GreyEngine\Dependencies\glfw\install: phony GreyEngine\Dependencies\glfw\CMakeFiles\install.util
 
 
 #############################################
 # Utility command for install/local
 
-build Grey$ Engine\Dependencies\glfw\CMakeFiles\install\local.util: CUSTOM_COMMAND Grey$ Engine\Dependencies\glfw\all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine\Dependencies\glfw" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+build GreyEngine\Dependencies\glfw\CMakeFiles\install\local.util: CUSTOM_COMMAND GreyEngine\Dependencies\glfw\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine\Dependencies\glfw" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
 
-build Grey$ Engine\Dependencies\glfw\install\local: phony Grey$ Engine\Dependencies\glfw\CMakeFiles\install\local.util
+build GreyEngine\Dependencies\glfw\install\local: phony GreyEngine\Dependencies\glfw\CMakeFiles\install\local.util
 
 
 #############################################
-# Custom command for Grey Engine\Dependencies\glfw\CMakeFiles\uninstall
+# Custom command for GreyEngine\Dependencies\glfw\CMakeFiles\uninstall
 
-build Grey$ Engine\Dependencies\glfw\CMakeFiles\uninstall | ${cmake_ninja_workdir}Grey$ Engine\Dependencies\glfw\CMakeFiles\uninstall: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine\Dependencies\glfw" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P "E:/C coding/Grey Engine App/out/build/x64-debug/Grey Engine/Dependencies/glfw/cmake_uninstall.cmake""
+build GreyEngine\Dependencies\glfw\CMakeFiles\uninstall | ${cmake_ninja_workdir}GreyEngine\Dependencies\glfw\CMakeFiles\uninstall: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine\Dependencies\glfw" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P "E:/C coding/Grey Engine App/out/build/x64-debug/GreyEngine/Dependencies/glfw/cmake_uninstall.cmake""
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# E:/C coding/Grey Engine App/Grey Engine/Dependencies/glfw/CMakeLists.txt
+# E:/C coding/Grey Engine App/GreyEngine/Dependencies/glfw/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -584,236 +584,236 @@ build Grey$ Engine\Dependencies\glfw\CMakeFiles\uninstall | ${cmake_ninja_workdi
 
 build cmake_object_order_depends_target_glfw: phony || .
 
-build Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\context.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\glfw\src\context.c || cmake_object_order_depends_target_glfw
+build GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\context.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\glfw\src\context.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine\Dependencies\glfw\src"
-  OBJECT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "Grey Engine\Dependencies\glfw\src\glfw3.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine\Dependencies\glfw\src"
+  OBJECT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = GreyEngine\Dependencies\glfw\src\glfw3.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
 
-build Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\init.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\glfw\src\init.c || cmake_object_order_depends_target_glfw
+build GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\init.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\glfw\src\init.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine\Dependencies\glfw\src"
-  OBJECT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "Grey Engine\Dependencies\glfw\src\glfw3.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine\Dependencies\glfw\src"
+  OBJECT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = GreyEngine\Dependencies\glfw\src\glfw3.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
 
-build Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\input.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\glfw\src\input.c || cmake_object_order_depends_target_glfw
+build GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\input.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\glfw\src\input.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine\Dependencies\glfw\src"
-  OBJECT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "Grey Engine\Dependencies\glfw\src\glfw3.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine\Dependencies\glfw\src"
+  OBJECT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = GreyEngine\Dependencies\glfw\src\glfw3.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
 
-build Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\monitor.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\glfw\src\monitor.c || cmake_object_order_depends_target_glfw
+build GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\monitor.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\glfw\src\monitor.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine\Dependencies\glfw\src"
-  OBJECT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "Grey Engine\Dependencies\glfw\src\glfw3.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine\Dependencies\glfw\src"
+  OBJECT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = GreyEngine\Dependencies\glfw\src\glfw3.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
 
-build Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\platform.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\glfw\src\platform.c || cmake_object_order_depends_target_glfw
+build GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\platform.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\glfw\src\platform.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine\Dependencies\glfw\src"
-  OBJECT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "Grey Engine\Dependencies\glfw\src\glfw3.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine\Dependencies\glfw\src"
+  OBJECT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = GreyEngine\Dependencies\glfw\src\glfw3.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
 
-build Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\vulkan.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\glfw\src\vulkan.c || cmake_object_order_depends_target_glfw
+build GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\vulkan.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\glfw\src\vulkan.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine\Dependencies\glfw\src"
-  OBJECT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "Grey Engine\Dependencies\glfw\src\glfw3.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine\Dependencies\glfw\src"
+  OBJECT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = GreyEngine\Dependencies\glfw\src\glfw3.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
 
-build Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\window.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\glfw\src\window.c || cmake_object_order_depends_target_glfw
+build GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\window.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\glfw\src\window.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine\Dependencies\glfw\src"
-  OBJECT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "Grey Engine\Dependencies\glfw\src\glfw3.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine\Dependencies\glfw\src"
+  OBJECT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = GreyEngine\Dependencies\glfw\src\glfw3.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
 
-build Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\egl_context.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\glfw\src\egl_context.c || cmake_object_order_depends_target_glfw
+build GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\egl_context.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\glfw\src\egl_context.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine\Dependencies\glfw\src"
-  OBJECT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "Grey Engine\Dependencies\glfw\src\glfw3.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine\Dependencies\glfw\src"
+  OBJECT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = GreyEngine\Dependencies\glfw\src\glfw3.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
 
-build Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\osmesa_context.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\glfw\src\osmesa_context.c || cmake_object_order_depends_target_glfw
+build GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\osmesa_context.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\glfw\src\osmesa_context.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine\Dependencies\glfw\src"
-  OBJECT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "Grey Engine\Dependencies\glfw\src\glfw3.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine\Dependencies\glfw\src"
+  OBJECT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = GreyEngine\Dependencies\glfw\src\glfw3.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
 
-build Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\null_init.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\glfw\src\null_init.c || cmake_object_order_depends_target_glfw
+build GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\null_init.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\glfw\src\null_init.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine\Dependencies\glfw\src"
-  OBJECT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "Grey Engine\Dependencies\glfw\src\glfw3.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine\Dependencies\glfw\src"
+  OBJECT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = GreyEngine\Dependencies\glfw\src\glfw3.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
 
-build Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\null_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\glfw\src\null_monitor.c || cmake_object_order_depends_target_glfw
+build GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\null_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\glfw\src\null_monitor.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine\Dependencies\glfw\src"
-  OBJECT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "Grey Engine\Dependencies\glfw\src\glfw3.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine\Dependencies\glfw\src"
+  OBJECT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = GreyEngine\Dependencies\glfw\src\glfw3.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
 
-build Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\null_window.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\glfw\src\null_window.c || cmake_object_order_depends_target_glfw
+build GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\null_window.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\glfw\src\null_window.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine\Dependencies\glfw\src"
-  OBJECT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "Grey Engine\Dependencies\glfw\src\glfw3.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine\Dependencies\glfw\src"
+  OBJECT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = GreyEngine\Dependencies\glfw\src\glfw3.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
 
-build Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\null_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\glfw\src\null_joystick.c || cmake_object_order_depends_target_glfw
+build GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\null_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\glfw\src\null_joystick.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine\Dependencies\glfw\src"
-  OBJECT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "Grey Engine\Dependencies\glfw\src\glfw3.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine\Dependencies\glfw\src"
+  OBJECT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = GreyEngine\Dependencies\glfw\src\glfw3.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
 
-build Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\win32_module.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\glfw\src\win32_module.c || cmake_object_order_depends_target_glfw
+build GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\win32_module.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\glfw\src\win32_module.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine\Dependencies\glfw\src"
-  OBJECT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "Grey Engine\Dependencies\glfw\src\glfw3.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine\Dependencies\glfw\src"
+  OBJECT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = GreyEngine\Dependencies\glfw\src\glfw3.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
 
-build Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\win32_time.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\glfw\src\win32_time.c || cmake_object_order_depends_target_glfw
+build GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\win32_time.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\glfw\src\win32_time.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine\Dependencies\glfw\src"
-  OBJECT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "Grey Engine\Dependencies\glfw\src\glfw3.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine\Dependencies\glfw\src"
+  OBJECT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = GreyEngine\Dependencies\glfw\src\glfw3.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
 
-build Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\win32_thread.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\glfw\src\win32_thread.c || cmake_object_order_depends_target_glfw
+build GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\win32_thread.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\glfw\src\win32_thread.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine\Dependencies\glfw\src"
-  OBJECT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "Grey Engine\Dependencies\glfw\src\glfw3.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine\Dependencies\glfw\src"
+  OBJECT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = GreyEngine\Dependencies\glfw\src\glfw3.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
 
-build Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\win32_init.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\glfw\src\win32_init.c || cmake_object_order_depends_target_glfw
+build GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\win32_init.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\glfw\src\win32_init.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine\Dependencies\glfw\src"
-  OBJECT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "Grey Engine\Dependencies\glfw\src\glfw3.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine\Dependencies\glfw\src"
+  OBJECT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = GreyEngine\Dependencies\glfw\src\glfw3.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
 
-build Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\win32_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\glfw\src\win32_joystick.c || cmake_object_order_depends_target_glfw
+build GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\win32_joystick.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\glfw\src\win32_joystick.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine\Dependencies\glfw\src"
-  OBJECT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "Grey Engine\Dependencies\glfw\src\glfw3.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine\Dependencies\glfw\src"
+  OBJECT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = GreyEngine\Dependencies\glfw\src\glfw3.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
 
-build Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\win32_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\glfw\src\win32_monitor.c || cmake_object_order_depends_target_glfw
+build GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\win32_monitor.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\glfw\src\win32_monitor.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine\Dependencies\glfw\src"
-  OBJECT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "Grey Engine\Dependencies\glfw\src\glfw3.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine\Dependencies\glfw\src"
+  OBJECT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = GreyEngine\Dependencies\glfw\src\glfw3.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
 
-build Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\win32_window.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\glfw\src\win32_window.c || cmake_object_order_depends_target_glfw
+build GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\win32_window.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\glfw\src\win32_window.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine\Dependencies\glfw\src"
-  OBJECT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "Grey Engine\Dependencies\glfw\src\glfw3.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine\Dependencies\glfw\src"
+  OBJECT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = GreyEngine\Dependencies\glfw\src\glfw3.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
 
-build Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\wgl_context.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\glfw\src\wgl_context.c || cmake_object_order_depends_target_glfw
+build GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\wgl_context.c.obj: C_COMPILER__glfw_unscanned_Debug E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\glfw\src\wgl_context.c || cmake_object_order_depends_target_glfw
   CONFIG = Debug
   DEFINES = -DUNICODE -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI /W3
-  INCLUDES = -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine\Dependencies\glfw\src"
-  OBJECT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  OBJECT_FILE_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
-  TARGET_COMPILE_PDB = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_PDB = "Grey Engine\Dependencies\glfw\src\glfw3.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
+  INCLUDES = -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\include" -I"E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\src" -I"E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine\Dependencies\glfw\src"
+  OBJECT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  OBJECT_FILE_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
+  TARGET_COMPILE_PDB = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_PDB = GreyEngine\Dependencies\glfw\src\glfw3.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
 
 
 # =============================================================================
@@ -821,169 +821,169 @@ build Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\wgl_context.c.obj: 
 
 
 #############################################
-# Link the static library Grey Engine\Dependencies\glfw\src\glfw3.lib
+# Link the static library GreyEngine\Dependencies\glfw\src\glfw3.lib
 
-build Grey$ Engine\Dependencies\glfw\src\glfw3.lib: C_STATIC_LIBRARY_LINKER__glfw_Debug Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\context.c.obj Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\init.c.obj Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\input.c.obj Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\monitor.c.obj Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\platform.c.obj Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\vulkan.c.obj Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\window.c.obj Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\egl_context.c.obj Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\osmesa_context.c.obj Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\null_init.c.obj Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\null_monitor.c.obj Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\null_window.c.obj Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\null_joystick.c.obj Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\win32_module.c.obj Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\win32_time.c.obj Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\win32_thread.c.obj Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\win32_init.c.obj Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\win32_joystick.c.obj Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\win32_monitor.c.obj Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\win32_window.c.obj Grey$ Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\wgl_context.c.obj
+build GreyEngine\Dependencies\glfw\src\glfw3.lib: C_STATIC_LIBRARY_LINKER__glfw_Debug GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\context.c.obj GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\init.c.obj GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\input.c.obj GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\monitor.c.obj GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\platform.c.obj GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\vulkan.c.obj GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\window.c.obj GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\egl_context.c.obj GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\osmesa_context.c.obj GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\null_init.c.obj GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\null_monitor.c.obj GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\null_window.c.obj GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\null_joystick.c.obj GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\win32_module.c.obj GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\win32_time.c.obj GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\win32_thread.c.obj GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\win32_init.c.obj GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\win32_joystick.c.obj GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\win32_monitor.c.obj GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\win32_window.c.obj GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\wgl_context.c.obj
   CONFIG = Debug
   LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /MDd /Ob0 /Od /RTC1 -ZI
   LINK_FLAGS = /machine:x64
-  OBJECT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
+  OBJECT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb"
-  TARGET_FILE = "Grey Engine\Dependencies\glfw\src\glfw3.lib"
-  TARGET_PDB = "Grey Engine\Dependencies\glfw\src\glfw3.pdb"
-  TARGET_SUPPORT_DIR = "Grey Engine\Dependencies\glfw\src\CMakeFiles\glfw.dir"
+  TARGET_COMPILE_PDB = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
+  TARGET_FILE = GreyEngine\Dependencies\glfw\src\glfw3.lib
+  TARGET_PDB = GreyEngine\Dependencies\glfw\src\glfw3.pdb
+  TARGET_SUPPORT_DIR = GreyEngine\Dependencies\glfw\src\CMakeFiles\glfw.dir
 
 
 #############################################
 # Utility command for update_mappings
 
-build Grey$ Engine\Dependencies\glfw\src\update_mappings: phony Grey$ Engine\Dependencies\glfw\src\CMakeFiles\update_mappings
+build GreyEngine\Dependencies\glfw\src\update_mappings: phony GreyEngine\Dependencies\glfw\src\CMakeFiles\update_mappings
 
 
 #############################################
 # Utility command for edit_cache
 
-build Grey$ Engine\Dependencies\glfw\src\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine\Dependencies\glfw\src" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+build GreyEngine\Dependencies\glfw\src\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine\Dependencies\glfw\src" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build Grey$ Engine\Dependencies\glfw\src\edit_cache: phony Grey$ Engine\Dependencies\glfw\src\CMakeFiles\edit_cache.util
+build GreyEngine\Dependencies\glfw\src\edit_cache: phony GreyEngine\Dependencies\glfw\src\CMakeFiles\edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build Grey$ Engine\Dependencies\glfw\src\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine\Dependencies\glfw\src" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"E:\C coding\Grey Engine App" -B"E:\C coding\Grey Engine App\out\build\x64-debug""
+build GreyEngine\Dependencies\glfw\src\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine\Dependencies\glfw\src" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"E:\C coding\Grey Engine App" -B"E:\C coding\Grey Engine App\out\build\x64-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build Grey$ Engine\Dependencies\glfw\src\rebuild_cache: phony Grey$ Engine\Dependencies\glfw\src\CMakeFiles\rebuild_cache.util
+build GreyEngine\Dependencies\glfw\src\rebuild_cache: phony GreyEngine\Dependencies\glfw\src\CMakeFiles\rebuild_cache.util
 
 
 #############################################
 # Utility command for list_install_components
 
-build Grey$ Engine\Dependencies\glfw\src\list_install_components: phony
+build GreyEngine\Dependencies\glfw\src\list_install_components: phony
 
 
 #############################################
 # Utility command for install
 
-build Grey$ Engine\Dependencies\glfw\src\CMakeFiles\install.util: CUSTOM_COMMAND Grey$ Engine\Dependencies\glfw\src\all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine\Dependencies\glfw\src" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+build GreyEngine\Dependencies\glfw\src\CMakeFiles\install.util: CUSTOM_COMMAND GreyEngine\Dependencies\glfw\src\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine\Dependencies\glfw\src" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
 
-build Grey$ Engine\Dependencies\glfw\src\install: phony Grey$ Engine\Dependencies\glfw\src\CMakeFiles\install.util
+build GreyEngine\Dependencies\glfw\src\install: phony GreyEngine\Dependencies\glfw\src\CMakeFiles\install.util
 
 
 #############################################
 # Utility command for install/local
 
-build Grey$ Engine\Dependencies\glfw\src\CMakeFiles\install\local.util: CUSTOM_COMMAND Grey$ Engine\Dependencies\glfw\src\all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine\Dependencies\glfw\src" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+build GreyEngine\Dependencies\glfw\src\CMakeFiles\install\local.util: CUSTOM_COMMAND GreyEngine\Dependencies\glfw\src\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine\Dependencies\glfw\src" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
 
-build Grey$ Engine\Dependencies\glfw\src\install\local: phony Grey$ Engine\Dependencies\glfw\src\CMakeFiles\install\local.util
+build GreyEngine\Dependencies\glfw\src\install\local: phony GreyEngine\Dependencies\glfw\src\CMakeFiles\install\local.util
 
 
 #############################################
-# Custom command for Grey Engine\Dependencies\glfw\src\CMakeFiles\update_mappings
+# Custom command for GreyEngine\Dependencies\glfw\src\CMakeFiles\update_mappings
 
-build Grey$ Engine\Dependencies\glfw\src\CMakeFiles\update_mappings | ${cmake_ninja_workdir}Grey$ Engine\Dependencies\glfw\src\CMakeFiles\update_mappings: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "E:\C coding\Grey Engine App\Grey Engine\Dependencies\glfw\src" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P "E:/C coding/Grey Engine App/Grey Engine/Dependencies/glfw/CMake/GenerateMappings.cmake" mappings.h.in mappings.h"
+build GreyEngine\Dependencies\glfw\src\CMakeFiles\update_mappings | ${cmake_ninja_workdir}GreyEngine\Dependencies\glfw\src\CMakeFiles\update_mappings: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "E:\C coding\Grey Engine App\GreyEngine\Dependencies\glfw\src" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P "E:/C coding/Grey Engine App/GreyEngine/Dependencies/glfw/CMake/GenerateMappings.cmake" mappings.h.in mappings.h"
   DESC = Updating gamepad mappings from upstream repository
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# E:/C coding/Grey Engine App/Grey Engine/Dependencies/glfw/CMakeLists.txt
+# E:/C coding/Grey Engine App/GreyEngine/Dependencies/glfw/CMakeLists.txt
 # =============================================================================
 
 
 #############################################
 # Utility command for edit_cache
 
-build Grey$ Engine\Dependencies\glfw\docs\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine\Dependencies\glfw\docs" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+build GreyEngine\Dependencies\glfw\docs\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine\Dependencies\glfw\docs" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build Grey$ Engine\Dependencies\glfw\docs\edit_cache: phony Grey$ Engine\Dependencies\glfw\docs\CMakeFiles\edit_cache.util
+build GreyEngine\Dependencies\glfw\docs\edit_cache: phony GreyEngine\Dependencies\glfw\docs\CMakeFiles\edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build Grey$ Engine\Dependencies\glfw\docs\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine\Dependencies\glfw\docs" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"E:\C coding\Grey Engine App" -B"E:\C coding\Grey Engine App\out\build\x64-debug""
+build GreyEngine\Dependencies\glfw\docs\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine\Dependencies\glfw\docs" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -S"E:\C coding\Grey Engine App" -B"E:\C coding\Grey Engine App\out\build\x64-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build Grey$ Engine\Dependencies\glfw\docs\rebuild_cache: phony Grey$ Engine\Dependencies\glfw\docs\CMakeFiles\rebuild_cache.util
+build GreyEngine\Dependencies\glfw\docs\rebuild_cache: phony GreyEngine\Dependencies\glfw\docs\CMakeFiles\rebuild_cache.util
 
 
 #############################################
 # Utility command for list_install_components
 
-build Grey$ Engine\Dependencies\glfw\docs\list_install_components: phony
+build GreyEngine\Dependencies\glfw\docs\list_install_components: phony
 
 
 #############################################
 # Utility command for install
 
-build Grey$ Engine\Dependencies\glfw\docs\CMakeFiles\install.util: CUSTOM_COMMAND Grey$ Engine\Dependencies\glfw\docs\all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine\Dependencies\glfw\docs" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+build GreyEngine\Dependencies\glfw\docs\CMakeFiles\install.util: CUSTOM_COMMAND GreyEngine\Dependencies\glfw\docs\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine\Dependencies\glfw\docs" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
 
-build Grey$ Engine\Dependencies\glfw\docs\install: phony Grey$ Engine\Dependencies\glfw\docs\CMakeFiles\install.util
+build GreyEngine\Dependencies\glfw\docs\install: phony GreyEngine\Dependencies\glfw\docs\CMakeFiles\install.util
 
 
 #############################################
 # Utility command for install/local
 
-build Grey$ Engine\Dependencies\glfw\docs\CMakeFiles\install\local.util: CUSTOM_COMMAND Grey$ Engine\Dependencies\glfw\docs\all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "E:\C coding\Grey Engine App\out\build\x64-debug\Grey Engine\Dependencies\glfw\docs" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+build GreyEngine\Dependencies\glfw\docs\CMakeFiles\install\local.util: CUSTOM_COMMAND GreyEngine\Dependencies\glfw\docs\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D "E:\C coding\Grey Engine App\out\build\x64-debug\GreyEngine\Dependencies\glfw\docs" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
 
-build Grey$ Engine\Dependencies\glfw\docs\install\local: phony Grey$ Engine\Dependencies\glfw\docs\CMakeFiles\install\local.util
+build GreyEngine\Dependencies\glfw\docs\install\local: phony GreyEngine\Dependencies\glfw\docs\CMakeFiles\install\local.util
 
 # =============================================================================
 # Target aliases.
 
 build App: phony App.exe
 
-build GreyEngine: phony Grey$ Engine\GreyEngine.lib
+build GreyEngine: phony GreyEngine\GreyEngine.lib
 
-build GreyEngine.lib: phony Grey$ Engine\GreyEngine.lib
+build GreyEngine.lib: phony GreyEngine\GreyEngine.lib
 
-build glad: phony Grey$ Engine\glad.lib
+build glad: phony GreyEngine\glad.lib
 
-build glad.lib: phony Grey$ Engine\glad.lib
+build glad.lib: phony GreyEngine\glad.lib
 
-build glfw: phony Grey$ Engine\Dependencies\glfw\src\glfw3.lib
+build glfw: phony GreyEngine\Dependencies\glfw\src\glfw3.lib
 
-build glfw3.lib: phony Grey$ Engine\Dependencies\glfw\src\glfw3.lib
+build glfw3.lib: phony GreyEngine\Dependencies\glfw\src\glfw3.lib
 
-build imgui: phony Grey$ Engine\imgui.lib
+build imgui: phony GreyEngine\imgui.lib
 
-build imgui.lib: phony Grey$ Engine\imgui.lib
+build imgui.lib: phony GreyEngine\imgui.lib
 
-build uninstall: phony Grey$ Engine\Dependencies\glfw\uninstall
+build uninstall: phony GreyEngine\Dependencies\glfw\uninstall
 
-build update_mappings: phony Grey$ Engine\Dependencies\glfw\src\update_mappings
+build update_mappings: phony GreyEngine\Dependencies\glfw\src\update_mappings
 
 # =============================================================================
 # Folder targets.
@@ -993,35 +993,35 @@ build update_mappings: phony Grey$ Engine\Dependencies\glfw\src\update_mappings
 #############################################
 # Folder: E:/C coding/Grey Engine App/out/build/x64-debug
 
-build all: phony App.exe Grey$ Engine\all
+build all: phony App.exe GreyEngine\all
 
 # =============================================================================
 
 #############################################
-# Folder: E:/C coding/Grey Engine App/out/build/x64-debug/Grey Engine
+# Folder: E:/C coding/Grey Engine App/out/build/x64-debug/GreyEngine
 
-build Grey$ Engine\all: phony Grey$ Engine\glad.lib Grey$ Engine\imgui.lib Grey$ Engine\GreyEngine.lib Grey$ Engine\Dependencies\glfw\all
-
-# =============================================================================
-
-#############################################
-# Folder: E:/C coding/Grey Engine App/out/build/x64-debug/Grey Engine/Dependencies/glfw
-
-build Grey$ Engine\Dependencies\glfw\all: phony Grey$ Engine\Dependencies\glfw\src\all Grey$ Engine\Dependencies\glfw\docs\all
+build GreyEngine\all: phony GreyEngine\glad.lib GreyEngine\imgui.lib GreyEngine\GreyEngine.lib GreyEngine\Dependencies\glfw\all
 
 # =============================================================================
 
 #############################################
-# Folder: E:/C coding/Grey Engine App/out/build/x64-debug/Grey Engine/Dependencies/glfw/docs
+# Folder: E:/C coding/Grey Engine App/out/build/x64-debug/GreyEngine/Dependencies/glfw
 
-build Grey$ Engine\Dependencies\glfw\docs\all: phony
+build GreyEngine\Dependencies\glfw\all: phony GreyEngine\Dependencies\glfw\src\all GreyEngine\Dependencies\glfw\docs\all
 
 # =============================================================================
 
 #############################################
-# Folder: E:/C coding/Grey Engine App/out/build/x64-debug/Grey Engine/Dependencies/glfw/src
+# Folder: E:/C coding/Grey Engine App/out/build/x64-debug/GreyEngine/Dependencies/glfw/docs
 
-build Grey$ Engine\Dependencies\glfw\src\all: phony Grey$ Engine\Dependencies\glfw\src\glfw3.lib
+build GreyEngine\Dependencies\glfw\docs\all: phony
+
+# =============================================================================
+
+#############################################
+# Folder: E:/C coding/Grey Engine App/out/build/x64-debug/GreyEngine/Dependencies/glfw/src
+
+build GreyEngine\Dependencies\glfw\src\all: phony GreyEngine\Dependencies\glfw\src\glfw3.lib
 
 # =============================================================================
 # Built-in targets
@@ -1030,14 +1030,14 @@ build Grey$ Engine\Dependencies\glfw\src\all: phony Grey$ Engine\Dependencies\gl
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja E$:\C$ coding\Grey$ Engine$ App\out\build\x64-debug\cmake_install.cmake E$:\C$ coding\Grey$ Engine$ App\out\build\x64-debug\Grey$ Engine\cmake_install.cmake E$:\C$ coding\Grey$ Engine$ App\out\build\x64-debug\Grey$ Engine\Dependencies\glfw\cmake_install.cmake E$:\C$ coding\Grey$ Engine$ App\out\build\x64-debug\Grey$ Engine\Dependencies\glfw\src\cmake_install.cmake E$:\C$ coding\Grey$ Engine$ App\out\build\x64-debug\Grey$ Engine\Dependencies\glfw\docs\cmake_install.cmake: RERUN_CMAKE | C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeDependentOption.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CheckLibraryExists.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\FindDoxygen.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\FindOpenGL.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\FindThreads.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\GNUInstallDirs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Internal\CMakeCLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Linker\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Linker\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles\4.2.3-msvc3\CMakeCCompiler.cmake CMakeFiles\4.2.3-msvc3\CMakeCXXCompiler.cmake CMakeFiles\4.2.3-msvc3\CMakeRCCompiler.cmake CMakeFiles\4.2.3-msvc3\CMakeSystem.cmake E$:\C$ coding\Grey$ Engine$ App\CMakeLists.txt E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\CMakeLists.txt E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\glfw\CMakeLists.txt E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\glfw\CMake\cmake_uninstall.cmake.in E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\glfw\CMake\glfw3.pc.in E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\glfw\CMake\glfw3Config.cmake.in E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\glfw\docs\CMakeLists.txt E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\glfw\src\CMakeLists.txt
+build build.ninja E$:\C$ coding\Grey$ Engine$ App\out\build\x64-debug\cmake_install.cmake E$:\C$ coding\Grey$ Engine$ App\out\build\x64-debug\GreyEngine\cmake_install.cmake E$:\C$ coding\Grey$ Engine$ App\out\build\x64-debug\GreyEngine\Dependencies\glfw\cmake_install.cmake E$:\C$ coding\Grey$ Engine$ App\out\build\x64-debug\GreyEngine\Dependencies\glfw\src\cmake_install.cmake E$:\C$ coding\Grey$ Engine$ App\out\build\x64-debug\GreyEngine\Dependencies\glfw\docs\cmake_install.cmake: RERUN_CMAKE | C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeDependentOption.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CheckLibraryExists.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\FindDoxygen.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\FindOpenGL.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\FindThreads.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\GNUInstallDirs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Internal\CMakeCLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Linker\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Linker\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles\4.2.3-msvc3\CMakeCCompiler.cmake CMakeFiles\4.2.3-msvc3\CMakeCXXCompiler.cmake CMakeFiles\4.2.3-msvc3\CMakeRCCompiler.cmake CMakeFiles\4.2.3-msvc3\CMakeSystem.cmake E$:\C$ coding\Grey$ Engine$ App\CMakeLists.txt E$:\C$ coding\Grey$ Engine$ App\GreyEngine\CMakeLists.txt E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\glfw\CMakeLists.txt E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\glfw\CMake\cmake_uninstall.cmake.in E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\glfw\CMake\glfw3.pc.in E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\glfw\CMake\glfw3Config.cmake.in E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\glfw\docs\CMakeLists.txt E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\glfw\src\CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeDependentOption.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CheckLibraryExists.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\FindDoxygen.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\FindOpenGL.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\FindThreads.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\GNUInstallDirs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Internal\CMakeCLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Linker\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Linker\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles\4.2.3-msvc3\CMakeCCompiler.cmake CMakeFiles\4.2.3-msvc3\CMakeCXXCompiler.cmake CMakeFiles\4.2.3-msvc3\CMakeRCCompiler.cmake CMakeFiles\4.2.3-msvc3\CMakeSystem.cmake E$:\C$ coding\Grey$ Engine$ App\CMakeLists.txt E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\CMakeLists.txt E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\glfw\CMakeLists.txt E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\glfw\CMake\cmake_uninstall.cmake.in E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\glfw\CMake\glfw3.pc.in E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\glfw\CMake\glfw3Config.cmake.in E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\glfw\docs\CMakeLists.txt E$:\C$ coding\Grey$ Engine$ App\Grey$ Engine\Dependencies\glfw\src\CMakeLists.txt: phony
+build C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\BasicConfigVersion-SameMajorVersion.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeDependentOption.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CheckCSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\CheckLibraryExists.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\FindDoxygen.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\FindOpenGL.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\FindThreads.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\GNUInstallDirs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Internal\CMakeCLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Internal\CheckSourceCompiles.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Linker\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Linker\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-4.2\Modules\WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles\4.2.3-msvc3\CMakeCCompiler.cmake CMakeFiles\4.2.3-msvc3\CMakeCXXCompiler.cmake CMakeFiles\4.2.3-msvc3\CMakeRCCompiler.cmake CMakeFiles\4.2.3-msvc3\CMakeSystem.cmake E$:\C$ coding\Grey$ Engine$ App\CMakeLists.txt E$:\C$ coding\Grey$ Engine$ App\GreyEngine\CMakeLists.txt E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\glfw\CMakeLists.txt E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\glfw\CMake\cmake_uninstall.cmake.in E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\glfw\CMake\glfw3.pc.in E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\glfw\CMake\glfw3Config.cmake.in E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\glfw\docs\CMakeLists.txt E$:\C$ coding\Grey$ Engine$ App\GreyEngine\Dependencies\glfw\src\CMakeLists.txt: phony
 
 
 #############################################

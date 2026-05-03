@@ -12,7 +12,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Grey Engine/glad.lib"
+			"path" : "GreyEngine/glad.lib"
 		}
 	],
 	"backtrace" : 1,
@@ -25,7 +25,7 @@
 		],
 		"files" : 
 		[
-			"Grey Engine/CMakeLists.txt"
+			"GreyEngine/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -64,7 +64,7 @@
 			[
 				{
 					"backtrace" : 2,
-					"path" : "E:/C coding/Grey Engine App/Grey Engine/Dependencies/glad/include"
+					"path" : "E:/C coding/Grey Engine App/GreyEngine/Dependencies/glad/include"
 				}
 			],
 			"language" : "C",
@@ -74,13 +74,13 @@
 			]
 		}
 	],
-	"id" : "glad::@066bd968e599bf214a53",
+	"id" : "glad::@d187e692bbf30b9a956f",
 	"name" : "glad",
 	"nameOnDisk" : "glad.lib",
 	"paths" : 
 	{
-		"build" : "Grey Engine",
-		"source" : "Grey Engine"
+		"build" : "GreyEngine",
+		"source" : "GreyEngine"
 	},
 	"sourceGroups" : 
 	[
@@ -97,7 +97,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Grey Engine/Dependencies/glad/src/glad.c",
+			"path" : "GreyEngine/Dependencies/glad/src/glad.c",
 			"sourceGroupIndex" : 0
 		}
 	],

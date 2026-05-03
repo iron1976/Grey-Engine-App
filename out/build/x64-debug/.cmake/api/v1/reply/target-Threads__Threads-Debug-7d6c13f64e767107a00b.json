@@ -11,7 +11,7 @@
 		"files" : 
 		[
 			"C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.2/Modules/FindThreads.cmake",
-			"Grey Engine/Dependencies/glfw/CMakeLists.txt"
+			"GreyEngine/Dependencies/glfw/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -41,14 +41,14 @@
 		"major" : 2,
 		"minor" : 9
 	},
-	"id" : "Threads::Threads::@5bbb7a683934e44c4b02",
+	"id" : "Threads::Threads::@d6bcb582ffbc5439b309",
 	"imported" : true,
 	"local" : true,
 	"name" : "Threads::Threads",
 	"paths" : 
 	{
-		"build" : "Grey Engine/Dependencies/glfw",
-		"source" : "Grey Engine/Dependencies/glfw"
+		"build" : "GreyEngine/Dependencies/glfw",
+		"source" : "GreyEngine/Dependencies/glfw"
 	},
 	"sources" : [],
 	"type" : "INTERFACE_LIBRARY"

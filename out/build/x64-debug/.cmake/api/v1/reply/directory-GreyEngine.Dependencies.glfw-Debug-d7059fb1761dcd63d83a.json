@@ -7,7 +7,7 @@
 		],
 		"files" : 
 		[
-			"Grey Engine/Dependencies/glfw/CMakeLists.txt"
+			"GreyEngine/Dependencies/glfw/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -53,7 +53,7 @@
 			"destination" : "include",
 			"paths" : 
 			[
-				"Grey Engine/Dependencies/glfw/include/GLFW"
+				"GreyEngine/Dependencies/glfw/include/GLFW"
 			],
 			"type" : "directory"
 		},
@@ -63,8 +63,8 @@
 			"destination" : "lib/cmake/glfw3",
 			"paths" : 
 			[
-				"out/build/x64-debug/Grey Engine/Dependencies/glfw/src/glfw3Config.cmake",
-				"out/build/x64-debug/Grey Engine/Dependencies/glfw/src/glfw3ConfigVersion.cmake"
+				"out/build/x64-debug/GreyEngine/Dependencies/glfw/src/glfw3Config.cmake",
+				"out/build/x64-debug/GreyEngine/Dependencies/glfw/src/glfw3ConfigVersion.cmake"
 			],
 			"type" : "file"
 		},
@@ -76,13 +76,13 @@
 			"exportTargets" : 
 			[
 				{
-					"id" : "glfw::@d2f26d1225067c988d7f",
+					"id" : "glfw::@d3c87dc4eb2210215cb8",
 					"index" : 3
 				}
 			],
 			"paths" : 
 			[
-				"Grey Engine/Dependencies/glfw/CMakeFiles/Export/f367bd07922f2ecfc14cf5547f1f7c4e/glfw3Targets.cmake"
+				"GreyEngine/Dependencies/glfw/CMakeFiles/Export/f367bd07922f2ecfc14cf5547f1f7c4e/glfw3Targets.cmake"
 			],
 			"type" : "export"
 		},
@@ -92,14 +92,14 @@
 			"destination" : "lib/pkgconfig",
 			"paths" : 
 			[
-				"out/build/x64-debug/Grey Engine/Dependencies/glfw/src/glfw3.pc"
+				"out/build/x64-debug/GreyEngine/Dependencies/glfw/src/glfw3.pc"
 			],
 			"type" : "file"
 		}
 	],
 	"paths" : 
 	{
-		"build" : "Grey Engine/Dependencies/glfw",
-		"source" : "Grey Engine/Dependencies/glfw"
+		"build" : "GreyEngine/Dependencies/glfw",
+		"source" : "GreyEngine/Dependencies/glfw"
 	}
 }

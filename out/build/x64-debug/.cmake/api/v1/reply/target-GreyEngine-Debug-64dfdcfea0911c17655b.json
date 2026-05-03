@@ -12,7 +12,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Grey Engine/GreyEngine.lib"
+			"path" : "GreyEngine/GreyEngine.lib"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 		],
 		"files" : 
 		[
-			"Grey Engine/CMakeLists.txt"
+			"GreyEngine/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -75,19 +75,19 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "glad::@066bd968e599bf214a53"
+			"id" : "glad::@d187e692bbf30b9a956f"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "glfw::@d2f26d1225067c988d7f"
+			"id" : "glfw::@d3c87dc4eb2210215cb8"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "OpenGL::GL::@066bd968e599bf214a53"
+			"id" : "OpenGL::GL::@d187e692bbf30b9a956f"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "imgui::@066bd968e599bf214a53"
+			"id" : "imgui::@d187e692bbf30b9a956f"
 		}
 	],
 	"compileGroups" : 
@@ -103,31 +103,31 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "E:/C coding/Grey Engine App/Grey Engine/Source"
+					"path" : "E:/C coding/Grey Engine App/GreyEngine/Source"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "E:/C coding/Grey Engine App/Grey Engine/Dependencies/glfw/include"
+					"path" : "E:/C coding/Grey Engine App/GreyEngine/Dependencies/glfw/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "E:/C coding/Grey Engine App/Grey Engine/Dependencies/glm"
+					"path" : "E:/C coding/Grey Engine App/GreyEngine/Dependencies/glm"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "E:/C coding/Grey Engine App/Grey Engine/Dependencies/stb_image"
+					"path" : "E:/C coding/Grey Engine App/GreyEngine/Dependencies/stb_image"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "E:/C coding/Grey Engine App/Grey Engine/Dependencies/glad/include"
+					"path" : "E:/C coding/Grey Engine App/GreyEngine/Dependencies/glad/include"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "E:/C coding/Grey Engine App/Grey Engine/Dependencies/imgui"
+					"path" : "E:/C coding/Grey Engine App/GreyEngine/Dependencies/imgui"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "E:/C coding/Grey Engine App/Grey Engine/Dependencies/imgui/backends"
+					"path" : "E:/C coding/Grey Engine App/GreyEngine/Dependencies/imgui/backends"
 				}
 			],
 			"language" : "CXX",
@@ -163,81 +163,81 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "glad::@066bd968e599bf214a53"
+			"id" : "glad::@d187e692bbf30b9a956f"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "imgui::@066bd968e599bf214a53"
+			"id" : "imgui::@d187e692bbf30b9a956f"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "glfw::@d2f26d1225067c988d7f"
+			"id" : "glfw::@d3c87dc4eb2210215cb8"
 		}
 	],
-	"id" : "GreyEngine::@066bd968e599bf214a53",
+	"id" : "GreyEngine::@d187e692bbf30b9a956f",
 	"interfaceCompileDependencies" : 
 	[
 		{
 			"backtrace" : 2,
-			"id" : "glad::@066bd968e599bf214a53"
+			"id" : "glad::@d187e692bbf30b9a956f"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "glfw::@d2f26d1225067c988d7f"
+			"id" : "glfw::@d3c87dc4eb2210215cb8"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "OpenGL::GL::@066bd968e599bf214a53"
+			"id" : "OpenGL::GL::@d187e692bbf30b9a956f"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "imgui::@066bd968e599bf214a53"
+			"id" : "imgui::@d187e692bbf30b9a956f"
 		}
 	],
 	"interfaceLinkLibraries" : 
 	[
 		{
 			"backtrace" : 2,
-			"id" : "glad::@066bd968e599bf214a53"
+			"id" : "glad::@d187e692bbf30b9a956f"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "glfw::@d2f26d1225067c988d7f"
+			"id" : "glfw::@d3c87dc4eb2210215cb8"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "OpenGL::GL::@066bd968e599bf214a53"
+			"id" : "OpenGL::GL::@d187e692bbf30b9a956f"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "imgui::@066bd968e599bf214a53"
+			"id" : "imgui::@d187e692bbf30b9a956f"
 		}
 	],
 	"linkLibraries" : 
 	[
 		{
 			"backtrace" : 2,
-			"id" : "glad::@066bd968e599bf214a53"
+			"id" : "glad::@d187e692bbf30b9a956f"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "glfw::@d2f26d1225067c988d7f"
+			"id" : "glfw::@d3c87dc4eb2210215cb8"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "OpenGL::GL::@066bd968e599bf214a53"
+			"id" : "OpenGL::GL::@d187e692bbf30b9a956f"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "imgui::@066bd968e599bf214a53"
+			"id" : "imgui::@d187e692bbf30b9a956f"
 		}
 	],
 	"name" : "GreyEngine",
 	"nameOnDisk" : "GreyEngine.lib",
 	"paths" : 
 	{
-		"build" : "Grey Engine",
-		"source" : "Grey Engine"
+		"build" : "GreyEngine",
+		"source" : "GreyEngine"
 	},
 	"sourceGroups" : 
 	[
@@ -268,91 +268,91 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Grey Engine/Source/Core/Application/Application.cpp",
+			"path" : "GreyEngine/Source/Core/Application/Application.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Grey Engine/Source/Core/Window/Window.cpp",
+			"path" : "GreyEngine/Source/Core/Window/Window.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Grey Engine/Source/Core/Renderer/Renderer.cpp",
+			"path" : "GreyEngine/Source/Core/Renderer/Renderer.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Grey Engine/Source/Core/Camera/Camera.cpp",
+			"path" : "GreyEngine/Source/Core/Camera/Camera.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Grey Engine/Source/Core/Camera/CameraController.cpp",
+			"path" : "GreyEngine/Source/Core/Camera/CameraController.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Grey Engine/Source/AssetControl/Mesh.cpp",
+			"path" : "GreyEngine/Source/AssetControl/Mesh.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Grey Engine/Source/AssetControl/OBJLoader.cpp",
+			"path" : "GreyEngine/Source/AssetControl/OBJLoader.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Grey Engine/Source/Platform/Windows/WindowsWindow.cpp",
+			"path" : "GreyEngine/Source/Platform/Windows/WindowsWindow.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Grey Engine/Source/Platform/Windows/WindowsInput.cpp",
+			"path" : "GreyEngine/Source/Platform/Windows/WindowsInput.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Grey Engine/Source/Platform/OpenGL/OpenGLRendererAPI.cpp",
+			"path" : "GreyEngine/Source/Platform/OpenGL/OpenGLRendererAPI.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Grey Engine/Source/Platform/OpenGL/OpenGLVertexBuffer.cpp",
+			"path" : "GreyEngine/Source/Platform/OpenGL/OpenGLVertexBuffer.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Grey Engine/Source/Platform/OpenGL/OpenGLIndexBuffer.cpp",
+			"path" : "GreyEngine/Source/Platform/OpenGL/OpenGLIndexBuffer.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Grey Engine/Source/Platform/OpenGL/OpenGLVertexArrayBuffer.cpp",
+			"path" : "GreyEngine/Source/Platform/OpenGL/OpenGLVertexArrayBuffer.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Grey Engine/Source/Platform/OpenGL/OpenGLShader.cpp",
+			"path" : "GreyEngine/Source/Platform/OpenGL/OpenGLShader.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Grey Engine/Source/Platform/OpenGL/OpenGLTexture.cpp",
+			"path" : "GreyEngine/Source/Platform/OpenGL/OpenGLTexture.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

@@ -13,7 +13,7 @@
 	"installers" : [],
 	"paths" : 
 	{
-		"build" : "Grey Engine/Dependencies/glfw/docs",
-		"source" : "Grey Engine/Dependencies/glfw/docs"
+		"build" : "GreyEngine/Dependencies/glfw/docs",
+		"source" : "GreyEngine/Dependencies/glfw/docs"
 	}
 }

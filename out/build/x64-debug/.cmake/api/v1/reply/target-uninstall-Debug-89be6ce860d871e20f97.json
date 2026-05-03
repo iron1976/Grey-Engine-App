@@ -8,7 +8,7 @@
 		],
 		"files" : 
 		[
-			"Grey Engine/Dependencies/glfw/CMakeLists.txt"
+			"GreyEngine/Dependencies/glfw/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -32,12 +32,12 @@
 	{
 		"name" : "GLFW3"
 	},
-	"id" : "uninstall::@5bbb7a683934e44c4b02",
+	"id" : "uninstall::@d6bcb582ffbc5439b309",
 	"name" : "uninstall",
 	"paths" : 
 	{
-		"build" : "Grey Engine/Dependencies/glfw",
-		"source" : "Grey Engine/Dependencies/glfw"
+		"build" : "GreyEngine/Dependencies/glfw",
+		"source" : "GreyEngine/Dependencies/glfw"
 	},
 	"sourceGroups" : 
 	[
@@ -61,13 +61,13 @@
 		{
 			"backtrace" : 1,
 			"isGenerated" : true,
-			"path" : "out/build/x64-debug/Grey Engine/Dependencies/glfw/CMakeFiles/uninstall",
+			"path" : "out/build/x64-debug/GreyEngine/Dependencies/glfw/CMakeFiles/uninstall",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "out/build/x64-debug/Grey Engine/Dependencies/glfw/CMakeFiles/uninstall.rule",
+			"path" : "out/build/x64-debug/GreyEngine/Dependencies/glfw/CMakeFiles/uninstall.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

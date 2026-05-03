@@ -8,8 +8,8 @@ endif()
 
 project ("App") 
  
-#Adding Grey Engine
-add_subdirectory("Grey Engine")
+#Adding GreyEngine
+add_subdirectory("GreyEngine")
 add_executable (App "Application/main.cpp")
 target_link_libraries(App
     PUBLIC GreyEngine

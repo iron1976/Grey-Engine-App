@@ -1567,7 +1567,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/C coding/Grey Engine App/out/build/x64-debug/Grey Engine/Dependencies/glfw"
+			"value" : "E:/C coding/Grey Engine App/out/build/x64-debug/GreyEngine/Dependencies/glfw"
 		},
 		{
 			"name" : "GLFW_BUILD_DOCS",
@@ -1687,7 +1687,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/C coding/Grey Engine App/Grey Engine/Dependencies/glfw"
+			"value" : "E:/C coding/Grey Engine App/GreyEngine/Dependencies/glfw"
 		},
 		{
 			"name" : "GLFW_USE_HYBRID_HPG",
@@ -1747,7 +1747,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/C coding/Grey Engine App/out/build/x64-debug/Grey Engine"
+			"value" : "E:/C coding/Grey Engine App/out/build/x64-debug/GreyEngine"
 		},
 		{
 			"name" : "GreyEngine_IS_TOP_LEVEL",
@@ -1783,7 +1783,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/C coding/Grey Engine App/Grey Engine"
+			"value" : "E:/C coding/Grey Engine App/GreyEngine"
 		},
 		{
 			"name" : "OPENGL_gl_LIBRARY",

@@ -6,13 +6,13 @@
 35	1267	7994576545917707	CMakeFiles/App.dir/Application/main.cpp.obj	280cd0c74e44614c
 173	3049	7988315122012301	Grey Engine/CMakeFiles/GreyEngine.dir/Source/AssetControl/OBJLoader.cpp.obj	79731d0fa338f7c0
 85	870	7987316584863562	Grey Engine/CMakeFiles/glad.dir/Dependencies/glad/src/glad.c.obj	c9bbbceb738a083e
-964	1092	7994708228121374	App.exe	96a62e36944daa2e
+1348	1580	7994726980718690	App.exe	96a62e36944daa2e
 67	1827	7990244702361955	Grey Engine/CMakeFiles/GreyEngine.dir/Source/Platform/OpenGL/OpenGLRendererAPI.cpp.obj	3307ea6268429798
 161	1211	7986511283751036	Grey Engine/Dependencies/glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj	90106a5f8605e225
 129	1205	7986511283373490	Grey Engine/Dependencies/glfw/src/CMakeFiles/glfw.dir/null_init.c.obj	fd099b37472cf02d
-47	913	7994708218952619	Grey Engine/CMakeFiles/GreyEngine.dir/Source/Core/Application/Application.cpp.obj	9617da87a8a6d3d8
+82	1289	7994726968058556	Grey Engine/CMakeFiles/GreyEngine.dir/Source/Core/Application/Application.cpp.obj	9617da87a8a6d3d8
 142	1256	7986511283529722	Grey Engine/Dependencies/glfw/src/CMakeFiles/glfw.dir/null_window.c.obj	ee57b0a37d44e38b
-914	964	7994708227626761	Grey Engine/GreyEngine.lib	95a5b4367fb8110b
+1289	1348	7994726980131308	Grey Engine/GreyEngine.lib	95a5b4367fb8110b
 116	1771	7988315121442299	Grey Engine/CMakeFiles/imgui.dir/Dependencies/imgui/imgui_widgets.cpp.obj	db1d7f28ec446937
 44	622	7994707958017700	Grey Engine/CMakeFiles/GreyEngine.dir/Source/Core/Camera/CameraController.cpp.obj	8898ba77e1d5b45
 136	1218	7986511283529722	Grey Engine/Dependencies/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.obj	a5266f2840ee214
@@ -54,15 +54,3 @@
 78	238	7990244702471961	Grey Engine/CMakeFiles/GreyEngine.dir/Source/Platform/OpenGL/OpenGLIndexBuffer.cpp.obj	43c641f8a833d5a9
 73	249	7990244702421957	Grey Engine/CMakeFiles/GreyEngine.dir/Source/Platform/OpenGL/OpenGLVertexBuffer.cpp.obj	f7c9747b64939a5e
 95	2197	7990244702641965	Grey Engine/CMakeFiles/GreyEngine.dir/Source/Platform/OpenGL/OpenGLTexture.cpp.obj	cc7e42f4cb72eaf6
-107	1334	7994712001446473	Grey Engine/CMakeFiles/GreyEngine.dir/Source/Core/Application/Application.cpp.obj	9617da87a8a6d3d8
-1334	1389	7994712013724300	Grey Engine/GreyEngine.lib	95a5b4367fb8110b
-1389	1614	7994712014271334	App.exe	96a62e36944daa2e
-107	1073	7994713697691574	Grey Engine/CMakeFiles/GreyEngine.dir/Source/Core/Application/Application.cpp.obj	9617da87a8a6d3d8
-1073	1128	7994713707333572	Grey Engine/GreyEngine.lib	95a5b4367fb8110b
-1128	1280	7994713707895355	App.exe	96a62e36944daa2e
-107	1364	7994721979335440	Grey Engine/CMakeFiles/GreyEngine.dir/Source/Core/Application/Application.cpp.obj	9617da87a8a6d3d8
-1365	1422	7994721991965192	Grey Engine/GreyEngine.lib	95a5b4367fb8110b
-1423	1558	7994721992546487	App.exe	96a62e36944daa2e
-82	1289	7994726968058556	Grey Engine/CMakeFiles/GreyEngine.dir/Source/Core/Application/Application.cpp.obj	9617da87a8a6d3d8
-1289	1348	7994726980131308	Grey Engine/GreyEngine.lib	95a5b4367fb8110b
-1348	1580	7994726980718690	App.exe	96a62e36944daa2e

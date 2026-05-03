@@ -6,22 +6,22 @@
 			[
 				{
 					"directoryIndex" : 1,
-					"id" : "OpenGL::GL::@066bd968e599bf214a53",
-					"jsonFile" : "target-OpenGL__GL-Debug-6c26f4209dd3822e54c1.json",
+					"id" : "OpenGL::GL::@d187e692bbf30b9a956f",
+					"jsonFile" : "target-OpenGL__GL-Debug-c0a8d817f82d55192282.json",
 					"name" : "OpenGL::GL",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 1,
-					"id" : "OpenGL::GLU::@066bd968e599bf214a53",
-					"jsonFile" : "target-OpenGL__GLU-Debug-fcc49d6afe2754396989.json",
+					"id" : "OpenGL::GLU::@d187e692bbf30b9a956f",
+					"jsonFile" : "target-OpenGL__GLU-Debug-f907fc18388a7077228c.json",
 					"name" : "OpenGL::GLU",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 2,
-					"id" : "Threads::Threads::@5bbb7a683934e44c4b02",
-					"jsonFile" : "target-Threads__Threads-Debug-ce1c78da1693c8767a45.json",
+					"id" : "Threads::Threads::@d6bcb582ffbc5439b309",
+					"jsonFile" : "target-Threads__Threads-Debug-7d6c13f64e767107a00b.json",
 					"name" : "Threads::Threads",
 					"projectIndex" : 2
 				}
@@ -53,20 +53,20 @@
 						0,
 						1
 					],
-					"build" : "Grey Engine",
+					"build" : "GreyEngine",
 					"childIndexes" : 
 					[
 						2
 					],
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-Grey Engine-Debug-e0bb630d407752a624b9.json",
+					"jsonFile" : "directory-GreyEngine-Debug-1cebf9fc97df470a68ce.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.10"
 					},
 					"parentIndex" : 0,
 					"projectIndex" : 1,
-					"source" : "Grey Engine",
+					"source" : "GreyEngine",
 					"targetIndexes" : 
 					[
 						1,
@@ -79,37 +79,37 @@
 					[
 						2
 					],
-					"build" : "Grey Engine/Dependencies/glfw",
+					"build" : "GreyEngine/Dependencies/glfw",
 					"childIndexes" : 
 					[
 						3,
 						4
 					],
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-Grey Engine.Dependencies.glfw-Debug-5047b8e928106c4a7946.json",
+					"jsonFile" : "directory-GreyEngine.Dependencies.glfw-Debug-d7059fb1761dcd63d83a.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.4"
 					},
 					"parentIndex" : 1,
 					"projectIndex" : 2,
-					"source" : "Grey Engine/Dependencies/glfw",
+					"source" : "GreyEngine/Dependencies/glfw",
 					"targetIndexes" : 
 					[
 						5
 					]
 				},
 				{
-					"build" : "Grey Engine/Dependencies/glfw/src",
+					"build" : "GreyEngine/Dependencies/glfw/src",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-Grey Engine.Dependencies.glfw.src-Debug-c7ace735256fcf70a129.json",
+					"jsonFile" : "directory-GreyEngine.Dependencies.glfw.src-Debug-5f614a0356567b3f02b4.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.4"
 					},
 					"parentIndex" : 2,
 					"projectIndex" : 2,
-					"source" : "Grey Engine/Dependencies/glfw/src",
+					"source" : "GreyEngine/Dependencies/glfw/src",
 					"targetIndexes" : 
 					[
 						3,
@@ -117,15 +117,15 @@
 					]
 				},
 				{
-					"build" : "Grey Engine/Dependencies/glfw/docs",
-					"jsonFile" : "directory-Grey Engine.Dependencies.glfw.docs-Debug-13dd0ba995538af7a3ef.json",
+					"build" : "GreyEngine/Dependencies/glfw/docs",
+					"jsonFile" : "directory-GreyEngine.Dependencies.glfw.docs-Debug-34b86205024f4bf481b5.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.4"
 					},
 					"parentIndex" : 2,
 					"projectIndex" : 2,
-					"source" : "Grey Engine/Dependencies/glfw/docs"
+					"source" : "GreyEngine/Dependencies/glfw/docs"
 				}
 			],
 			"name" : "Debug",
@@ -195,49 +195,49 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "App::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-App-Debug-922ca67e9d98acee1cd7.json",
+					"jsonFile" : "target-App-Debug-a220cc595f45e726e6a7.json",
 					"name" : "App",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
-					"id" : "GreyEngine::@066bd968e599bf214a53",
-					"jsonFile" : "target-GreyEngine-Debug-aefdaf660157c3cb560f.json",
+					"id" : "GreyEngine::@d187e692bbf30b9a956f",
+					"jsonFile" : "target-GreyEngine-Debug-64dfdcfea0911c17655b.json",
 					"name" : "GreyEngine",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 1,
-					"id" : "glad::@066bd968e599bf214a53",
-					"jsonFile" : "target-glad-Debug-189f097fa5b8ced59117.json",
+					"id" : "glad::@d187e692bbf30b9a956f",
+					"jsonFile" : "target-glad-Debug-5ae906694c092c345d1c.json",
 					"name" : "glad",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 3,
-					"id" : "glfw::@d2f26d1225067c988d7f",
-					"jsonFile" : "target-glfw-Debug-383db0f740c406241a78.json",
+					"id" : "glfw::@d3c87dc4eb2210215cb8",
+					"jsonFile" : "target-glfw-Debug-99e3b102dcd74d26ff81.json",
 					"name" : "glfw",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 1,
-					"id" : "imgui::@066bd968e599bf214a53",
-					"jsonFile" : "target-imgui-Debug-5a9e0cb6f9f7f1e0bcd3.json",
+					"id" : "imgui::@d187e692bbf30b9a956f",
+					"jsonFile" : "target-imgui-Debug-2ada5430c1236497311b.json",
 					"name" : "imgui",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 2,
-					"id" : "uninstall::@5bbb7a683934e44c4b02",
-					"jsonFile" : "target-uninstall-Debug-f6d7283c11f4441a57ac.json",
+					"id" : "uninstall::@d6bcb582ffbc5439b309",
+					"jsonFile" : "target-uninstall-Debug-89be6ce860d871e20f97.json",
 					"name" : "uninstall",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 3,
-					"id" : "update_mappings::@d2f26d1225067c988d7f",
-					"jsonFile" : "target-update_mappings-Debug-3889ec82b159d7614ada.json",
+					"id" : "update_mappings::@d3c87dc4eb2210215cb8",
+					"jsonFile" : "target-update_mappings-Debug-19839fb59ebd2aaf0ee7.json",
 					"name" : "update_mappings",
 					"projectIndex" : 2
 				}

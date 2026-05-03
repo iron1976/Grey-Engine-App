@@ -6,13 +6,12 @@
 		"commands" : 
 		[
 			"add_library",
-			"find_package",
-			"set_target_properties"
+			"find_package"
 		],
 		"files" : 
 		[
 			"C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.2/Modules/FindOpenGL.cmake",
-			"Grey Engine/CMakeLists.txt"
+			"GreyEngine/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -32,13 +31,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 865,
-				"parent" : 2
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 869,
+				"line" : 819,
 				"parent" : 2
 			}
 		]
@@ -48,28 +41,14 @@
 		"major" : 2,
 		"minor" : 9
 	},
-	"id" : "OpenGL::GLU::@066bd968e599bf214a53",
+	"id" : "OpenGL::GL::@d187e692bbf30b9a956f",
 	"imported" : true,
-	"interfaceCompileDependencies" : 
-	[
-		{
-			"backtrace" : 4,
-			"id" : "OpenGL::GL::@066bd968e599bf214a53"
-		}
-	],
-	"interfaceLinkLibraries" : 
-	[
-		{
-			"backtrace" : 4,
-			"id" : "OpenGL::GL::@066bd968e599bf214a53"
-		}
-	],
 	"local" : true,
-	"name" : "OpenGL::GLU",
+	"name" : "OpenGL::GL",
 	"paths" : 
 	{
-		"build" : "Grey Engine",
-		"source" : "Grey Engine"
+		"build" : "GreyEngine",
+		"source" : "GreyEngine"
 	},
 	"sources" : [],
 	"type" : "INTERFACE_LIBRARY"

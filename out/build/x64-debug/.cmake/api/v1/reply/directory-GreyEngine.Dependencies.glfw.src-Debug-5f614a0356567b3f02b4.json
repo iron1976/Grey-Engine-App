@@ -7,7 +7,7 @@
 		],
 		"files" : 
 		[
-			"Grey Engine/Dependencies/glfw/src/CMakeLists.txt"
+			"GreyEngine/Dependencies/glfw/src/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -35,16 +35,16 @@
 			"destination" : "lib",
 			"paths" : 
 			[
-				"Grey Engine/Dependencies/glfw/src/glfw3.lib"
+				"GreyEngine/Dependencies/glfw/src/glfw3.lib"
 			],
-			"targetId" : "glfw::@d2f26d1225067c988d7f",
+			"targetId" : "glfw::@d3c87dc4eb2210215cb8",
 			"targetIndex" : 3,
 			"type" : "target"
 		}
 	],
 	"paths" : 
 	{
-		"build" : "Grey Engine/Dependencies/glfw/src",
-		"source" : "Grey Engine/Dependencies/glfw/src"
+		"build" : "GreyEngine/Dependencies/glfw/src",
+		"source" : "GreyEngine/Dependencies/glfw/src"
 	}
 }

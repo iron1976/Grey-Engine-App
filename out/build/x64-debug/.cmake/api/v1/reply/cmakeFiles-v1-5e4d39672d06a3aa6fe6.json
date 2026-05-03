@@ -201,7 +201,7 @@
 			"path" : "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.2/Modules/Platform/Linker/Windows-MSVC.cmake"
 		},
 		{
-			"path" : "Grey Engine/CMakeLists.txt"
+			"path" : "GreyEngine/CMakeLists.txt"
 		},
 		{
 			"isCMake" : true,
@@ -219,7 +219,7 @@
 			"path" : "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.2/Modules/FindPackageMessage.cmake"
 		},
 		{
-			"path" : "Grey Engine/Dependencies/glfw/CMakeLists.txt"
+			"path" : "GreyEngine/Dependencies/glfw/CMakeLists.txt"
 		},
 		{
 			"isCMake" : true,
@@ -277,7 +277,7 @@
 			"path" : "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.2/Modules/WriteBasicConfigVersionFile.cmake"
 		},
 		{
-			"path" : "Grey Engine/Dependencies/glfw/CMake/glfw3Config.cmake.in"
+			"path" : "GreyEngine/Dependencies/glfw/CMake/glfw3Config.cmake.in"
 		},
 		{
 			"isCMake" : true,
@@ -285,16 +285,16 @@
 			"path" : "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-4.2/Modules/BasicConfigVersion-SameMajorVersion.cmake.in"
 		},
 		{
-			"path" : "Grey Engine/Dependencies/glfw/CMake/cmake_uninstall.cmake.in"
+			"path" : "GreyEngine/Dependencies/glfw/CMake/cmake_uninstall.cmake.in"
 		},
 		{
-			"path" : "Grey Engine/Dependencies/glfw/src/CMakeLists.txt"
+			"path" : "GreyEngine/Dependencies/glfw/src/CMakeLists.txt"
 		},
 		{
-			"path" : "Grey Engine/Dependencies/glfw/CMake/glfw3.pc.in"
+			"path" : "GreyEngine/Dependencies/glfw/CMake/glfw3.pc.in"
 		},
 		{
-			"path" : "Grey Engine/Dependencies/glfw/docs/CMakeLists.txt"
+			"path" : "GreyEngine/Dependencies/glfw/docs/CMakeLists.txt"
 		},
 		{
 			"isCMake" : true,

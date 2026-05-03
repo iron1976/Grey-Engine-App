@@ -20,7 +20,7 @@
 		"files" : 
 		[
 			"CMakeLists.txt",
-			"Grey Engine/CMakeLists.txt"
+			"GreyEngine/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -65,7 +65,7 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "GreyEngine::@066bd968e599bf214a53"
+			"id" : "GreyEngine::@d187e692bbf30b9a956f"
 		}
 	],
 	"compileGroups" : 
@@ -81,23 +81,23 @@
 			[
 				{
 					"backtrace" : 2,
-					"path" : "E:/C coding/Grey Engine App/Grey Engine/Source"
+					"path" : "E:/C coding/Grey Engine App/GreyEngine/Source"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "E:/C coding/Grey Engine App/Grey Engine/Dependencies/glad/include"
+					"path" : "E:/C coding/Grey Engine App/GreyEngine/Dependencies/glad/include"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "E:/C coding/Grey Engine App/Grey Engine/Dependencies/glfw/include"
+					"path" : "E:/C coding/Grey Engine App/GreyEngine/Dependencies/glfw/include"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "E:/C coding/Grey Engine App/Grey Engine/Dependencies/imgui"
+					"path" : "E:/C coding/Grey Engine App/GreyEngine/Dependencies/imgui"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "E:/C coding/Grey Engine App/Grey Engine/Dependencies/imgui/backends"
+					"path" : "E:/C coding/Grey Engine App/GreyEngine/Dependencies/imgui/backends"
 				}
 			],
 			"language" : "CXX",
@@ -119,19 +119,19 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "glad::@066bd968e599bf214a53"
+			"id" : "glad::@d187e692bbf30b9a956f"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "imgui::@066bd968e599bf214a53"
+			"id" : "imgui::@d187e692bbf30b9a956f"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "GreyEngine::@066bd968e599bf214a53"
+			"id" : "GreyEngine::@d187e692bbf30b9a956f"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "glfw::@d2f26d1225067c988d7f"
+			"id" : "glfw::@d3c87dc4eb2210215cb8"
 		}
 	],
 	"id" : "App::@6890427a1f51a3e7e1df",
@@ -153,12 +153,12 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "\"Grey Engine\\GreyEngine.lib\"",
+				"fragment" : "GreyEngine\\GreyEngine.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "\"Grey Engine\\glad.lib\"",
+				"fragment" : "GreyEngine\\glad.lib",
 				"role" : "libraries"
 			},
 			{
@@ -168,12 +168,12 @@
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "\"Grey Engine\\imgui.lib\"",
+				"fragment" : "GreyEngine\\imgui.lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "\"Grey Engine\\Dependencies\\glfw\\src\\glfw3.lib\"",
+				"fragment" : "GreyEngine\\Dependencies\\glfw\\src\\glfw3.lib",
 				"role" : "libraries"
 			},
 			{
@@ -187,7 +187,7 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "GreyEngine::@066bd968e599bf214a53"
+			"id" : "GreyEngine::@d187e692bbf30b9a956f"
 		}
 	],
 	"name" : "App",
