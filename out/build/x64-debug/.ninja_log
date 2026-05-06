@@ -1,30 +1,34 @@
 # ninja log v6
 870	974	7987316592717006	Grey Engine/glad.lib	ef871902cadebbc1
 98	1263	7986511283061250	Grey Engine/Dependencies/glfw/src/CMakeFiles/glfw.dir/platform.c.obj	b3f60b6fd02034f0
+119	1298	7995368769383584	GreyEngine/CMakeFiles/GreyEngine.dir/Source/Platform/OpenGL/OpenGLShader.cpp.obj	aa7bf36be549d60d
 105	1230	7986511283217260	Grey Engine/Dependencies/glfw/src/CMakeFiles/glfw.dir/vulkan.c.obj	44700c8fa22e0cf1
 81	1224	7986511282904786	Grey Engine/Dependencies/glfw/src/CMakeFiles/glfw.dir/init.c.obj	9f7a3db97e34290b
-35	1267	7994576545917707	CMakeFiles/App.dir/Application/main.cpp.obj	280cd0c74e44614c
+1392	3188	7995343774617414	CMakeFiles/App.dir/Application/main.cpp.obj	3d10b3f0b64322a4
 173	3049	7988315122012301	Grey Engine/CMakeFiles/GreyEngine.dir/Source/AssetControl/OBJLoader.cpp.obj	79731d0fa338f7c0
 85	870	7987316584863562	Grey Engine/CMakeFiles/glad.dir/Dependencies/glad/src/glad.c.obj	c9bbbceb738a083e
-1348	1580	7994726980718690	App.exe	96a62e36944daa2e
+1534	2098	7995379230119753	App.exe	121f68007a5a16c7
 67	1827	7990244702361955	Grey Engine/CMakeFiles/GreyEngine.dir/Source/Platform/OpenGL/OpenGLRendererAPI.cpp.obj	3307ea6268429798
 161	1211	7986511283751036	Grey Engine/Dependencies/glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj	90106a5f8605e225
 129	1205	7986511283373490	Grey Engine/Dependencies/glfw/src/CMakeFiles/glfw.dir/null_init.c.obj	fd099b37472cf02d
 82	1289	7994726968058556	Grey Engine/CMakeFiles/GreyEngine.dir/Source/Core/Application/Application.cpp.obj	9617da87a8a6d3d8
 142	1256	7986511283529722	Grey Engine/Dependencies/glfw/src/CMakeFiles/glfw.dir/null_window.c.obj	ee57b0a37d44e38b
-1289	1348	7994726980131308	Grey Engine/GreyEngine.lib	95a5b4367fb8110b
 116	1771	7988315121442299	Grey Engine/CMakeFiles/imgui.dir/Dependencies/imgui/imgui_widgets.cpp.obj	db1d7f28ec446937
+1289	1348	7994726980131308	Grey Engine/GreyEngine.lib	95a5b4367fb8110b
 44	622	7994707958017700	Grey Engine/CMakeFiles/GreyEngine.dir/Source/Core/Camera/CameraController.cpp.obj	8898ba77e1d5b45
 136	1218	7986511283529722	Grey Engine/Dependencies/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.obj	a5266f2840ee214
 175	1235	7986511283907339	Grey Engine/Dependencies/glfw/src/CMakeFiles/glfw.dir/win32_init.c.obj	831778ad7dafa3d2
+51	781	7995379215234616	GreyEngine/CMakeFiles/GreyEngine.dir/Source/Platform/OpenGL/OpenGLVertexArrayBuffer.cpp.obj	1286da06ba36a5ba
 74	1260	7986511282904786	Grey Engine/Dependencies/glfw/src/CMakeFiles/glfw.dir/context.c.obj	848f530bea9ed466
 86	1252	7986511282904786	Grey Engine/Dependencies/glfw/src/CMakeFiles/glfw.dir/input.c.obj	67cd69c9a85a4837
 181	1240	7986511283907339	Grey Engine/Dependencies/glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.obj	5c8d2e4716b2de40
 167	1244	7986511283751036	Grey Engine/Dependencies/glfw/src/CMakeFiles/glfw.dir/win32_thread.c.obj	f332368063707194
+36	919	7995343761025109	GreyEngine/Dependencies/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.obj	9926d6a16f6a0947
 155	1248	7986511283685960	Grey Engine/Dependencies/glfw/src/CMakeFiles/glfw.dir/win32_module.c.obj	32b22612e60ce548
 92	1267	7986511283061250	Grey Engine/Dependencies/glfw/src/CMakeFiles/glfw.dir/monitor.c.obj	3c05b79f8eb8c08c
 186	1270	7986511283907339	Grey Engine/Dependencies/glfw/src/CMakeFiles/glfw.dir/win32_monitor.c.obj	2442f64c734ed821
 192	1273	7986511284063578	Grey Engine/Dependencies/glfw/src/CMakeFiles/glfw.dir/win32_window.c.obj	6f1ed1e00595affe
+67	1032	7995343761337576	GreyEngine/Dependencies/glfw/src/CMakeFiles/glfw.dir/win32_init.c.obj	b3ae6dc670924e5c
 117	1277	7986511283217260	Grey Engine/Dependencies/glfw/src/CMakeFiles/glfw.dir/egl_context.c.obj	63a6fb4033fb9d38
 37	591	7994671960781375	Grey Engine/CMakeFiles/GreyEngine.dir/Source/Core/Camera/Camera.cpp.obj	db6d6f636c6e22ba
 111	1280	7986511283217260	Grey Engine/Dependencies/glfw/src/CMakeFiles/glfw.dir/window.c.obj	937b5ae9d91694
@@ -35,9 +39,12 @@
 202	687	7988315122302301	Grey Engine/CMakeFiles/GreyEngine.dir/Source/Renderer/OpenGL/OpenGLVertexBuffer.cpp.obj	59a1eb6c069b488b
 198	1341	7986511284063578	Grey Engine/Dependencies/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj	e53762ccfce22eb6
 103	1665	7988315121312306	Grey Engine/CMakeFiles/imgui.dir/Dependencies/imgui/imgui_draw.cpp.obj	dceccd38122e1420
+11	944	7995343760869269	GreyEngine/Dependencies/glfw/src/CMakeFiles/glfw.dir/context.c.obj	472c318bfb848e31
 1341	1390	7986511295582738	Grey Engine/Dependencies/glfw/src/glfw3.lib	24d98566aa00f04d
 180	2394	7988315122082308	Grey Engine/CMakeFiles/GreyEngine.dir/Source/Platform/Windows/WindowsWindow.cpp.obj	cfe494c2aaca6b76
+51	905	7995343761181343	GreyEngine/Dependencies/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.obj	841064f4ab1a219a
 144	1697	7988315121722301	Grey Engine/CMakeFiles/GreyEngine.dir/Source/Core/Window/Window.cpp.obj	1bebe3ef7208c1a5
+23	890	7995343760869269	GreyEngine/Dependencies/glfw/src/CMakeFiles/glfw.dir/platform.c.obj	b669ea957e73aa37
 216	2298	7988315122442302	Grey Engine/CMakeFiles/GreyEngine.dir/Source/Renderer/OpenGL/OpenGLVertexArrayBuffer.cpp.obj	6786883218ddde15
 58	1653	7990244702276444	Grey Engine/CMakeFiles/GreyEngine.dir/Source/Core/Renderer/Renderer.cpp.obj	9d87a26dcd60ccce
 2234	2366	7988315142622325	Grey Engine/imgui.lib	2587c7be5627a559
@@ -53,19 +60,14 @@
 95	2233	7988315121232296	Grey Engine/CMakeFiles/imgui.dir/Dependencies/imgui/imgui.cpp.obj	b009aff9516aa7b5
 78	238	7990244702471961	Grey Engine/CMakeFiles/GreyEngine.dir/Source/Platform/OpenGL/OpenGLIndexBuffer.cpp.obj	43c641f8a833d5a9
 73	249	7990244702421957	Grey Engine/CMakeFiles/GreyEngine.dir/Source/Platform/OpenGL/OpenGLVertexBuffer.cpp.obj	f7c9747b64939a5e
+58	1076	7995343761337576	GreyEngine/Dependencies/glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj	18216ad4ef4e843e
+85	1013	7995343761493808	GreyEngine/Dependencies/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj	f4fbcd7d4d9d602c
 95	2197	7990244702641965	Grey Engine/CMakeFiles/GreyEngine.dir/Source/Platform/OpenGL/OpenGLTexture.cpp.obj	cc7e42f4cb72eaf6
-23	890	7995343760869269	GreyEngine/Dependencies/glfw/src/CMakeFiles/glfw.dir/platform.c.obj	b669ea957e73aa37
-51	905	7995343761181343	GreyEngine/Dependencies/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.obj	841064f4ab1a219a
-36	919	7995343761025109	GreyEngine/Dependencies/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.obj	9926d6a16f6a0947
-11	944	7995343760869269	GreyEngine/Dependencies/glfw/src/CMakeFiles/glfw.dir/context.c.obj	472c318bfb848e31
 39	960	7995343761025109	GreyEngine/Dependencies/glfw/src/CMakeFiles/glfw.dir/null_init.c.obj	e0300b553fc5396e
 14	974	7995343760869269	GreyEngine/Dependencies/glfw/src/CMakeFiles/glfw.dir/init.c.obj	2e808d83d11f11cc
 44	990	7995343761181343	GreyEngine/Dependencies/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.obj	d6536ef07095ce6e
-85	1013	7995343761493808	GreyEngine/Dependencies/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj	f4fbcd7d4d9d602c
-67	1032	7995343761337576	GreyEngine/Dependencies/glfw/src/CMakeFiles/glfw.dir/win32_init.c.obj	b3ae6dc670924e5c
 48	1049	7995343761181343	GreyEngine/Dependencies/glfw/src/CMakeFiles/glfw.dir/null_window.c.obj	3739ca8e444badb7
 26	1063	7995343760869269	GreyEngine/Dependencies/glfw/src/CMakeFiles/glfw.dir/vulkan.c.obj	958fc6537765ec2e
-58	1076	7995343761337576	GreyEngine/Dependencies/glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj	18216ad4ef4e843e
 33	1089	7995343761025109	GreyEngine/Dependencies/glfw/src/CMakeFiles/glfw.dir/egl_context.c.obj	b1c37ca7019771c
 80	1102	7995343761493808	GreyEngine/Dependencies/glfw/src/CMakeFiles/glfw.dir/win32_window.c.obj	df6390c4fc80b05b
 77	1113	7995343761493808	GreyEngine/Dependencies/glfw/src/CMakeFiles/glfw.dir/win32_monitor.c.obj	91cb82be37df4ae3
@@ -75,8 +77,8 @@
 63	1208	7995343761337576	GreyEngine/Dependencies/glfw/src/CMakeFiles/glfw.dir/win32_thread.c.obj	f93e01170b6814a9
 72	1230	7995343761337576	GreyEngine/Dependencies/glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.obj	4f4097a8f011d024
 20	1246	7995343760869269	GreyEngine/Dependencies/glfw/src/CMakeFiles/glfw.dir/monitor.c.obj	ff5b9d689da3ec0d
-1137	1381	7995343772117667	GreyEngine/CMakeFiles/GreyEngine.dir/Source/Platform/OpenGL/OpenGLVertexBuffer.cpp.obj	476065bd61647f89
-1150	1392	7995343772117667	GreyEngine/CMakeFiles/GreyEngine.dir/Source/Platform/OpenGL/OpenGLIndexBuffer.cpp.obj	df82a498e45814ac
+139	312	7995366990205849	GreyEngine/CMakeFiles/GreyEngine.dir/Source/Platform/OpenGL/OpenGLVertexBuffer.cpp.obj	476065bd61647f89
+153	231	7995373782646758	GreyEngine/CMakeFiles/GreyEngine.dir/Source/Platform/OpenGL/OpenGLIndexBuffer.cpp.obj	df82a498e45814ac
 1247	1432	7995343773211308	GreyEngine/Dependencies/glfw/src/glfw3.lib	a60883bf659a0839
 89	1829	7995343761493808	GreyEngine/CMakeFiles/glad.dir/Dependencies/glad/src/glad.c.obj	4f23ee8ae2ddb177
 974	1875	7995343770399124	GreyEngine/CMakeFiles/imgui.dir/Dependencies/imgui/backends/imgui_impl_opengl3.cpp.obj	ae48508773cb8960
@@ -89,17 +91,13 @@
 892	2839	7995343769617953	GreyEngine/CMakeFiles/imgui.dir/Dependencies/imgui/imgui.cpp.obj	9c51719eb982598a
 2840	2948	7995343789147097	GreyEngine/imgui.lib	88698a9a6e4ebebf
 1103	2982	7995343771648975	GreyEngine/CMakeFiles/GreyEngine.dir/Source/Platform/Windows/WindowsWindow.cpp.obj	12b5068dbdbf4547
-1033	2989	7995343771024057	GreyEngine/CMakeFiles/GreyEngine.dir/Source/Core/Renderer/Renderer.cpp.obj	e87f021605cb865c
-1208	3067	7995343772742605	GreyEngine/CMakeFiles/GreyEngine.dir/Source/Platform/OpenGL/OpenGLVertexArrayBuffer.cpp.obj	1286da06ba36a5ba
-1063	3104	7995343771336502	GreyEngine/CMakeFiles/GreyEngine.dir/Source/Core/Camera/CameraController.cpp.obj	881353f7c2fdad70
-1049	3119	7995343771180274	GreyEngine/CMakeFiles/GreyEngine.dir/Source/Core/Camera/Camera.cpp.obj	24df783df230798a
-1113	3155	7995343771805197	GreyEngine/CMakeFiles/GreyEngine.dir/Source/Platform/Windows/WindowsInput.cpp.obj	4c982947ce5387b9
-1124	3181	7995343771961431	GreyEngine/CMakeFiles/GreyEngine.dir/Source/Platform/OpenGL/OpenGLRendererAPI.cpp.obj	495a2733c138a7ba
-1392	3188	7995343774617414	CMakeFiles/App.dir/Application/main.cpp.obj	3d10b3f0b64322a4
-1381	3379	7995343774461184	GreyEngine/CMakeFiles/GreyEngine.dir/Source/Platform/OpenGL/OpenGLTexture.cpp.obj	cc5a91634c1a603c
-1077	3604	7995343771492744	GreyEngine/CMakeFiles/GreyEngine.dir/Source/AssetControl/Mesh.cpp.obj	a7e93eae8bb6d70c
-1231	3650	7995343773055068	GreyEngine/CMakeFiles/GreyEngine.dir/Source/Platform/OpenGL/OpenGLShader.cpp.obj	aa7bf36be549d60d
-1090	3699	7995343771648975	GreyEngine/CMakeFiles/GreyEngine.dir/Source/AssetControl/OBJLoader.cpp.obj	66992b4085d093f9
-991	3730	7995343770555356	GreyEngine/CMakeFiles/GreyEngine.dir/Source/Core/Application/Application.cpp.obj	26317c37f4f8da0a
-3730	3782	7995343798052906	GreyEngine/GreyEngine.lib	3f35a02d7e46898c
-3782	4141	7995343798521056	App.exe	121f68007a5a16c7
+41	746	7995379215078387	GreyEngine/CMakeFiles/GreyEngine.dir/Source/Core/Renderer/Renderer.cpp.obj	e87f021605cb865c
+132	1187	7995373782490523	GreyEngine/CMakeFiles/GreyEngine.dir/Source/Core/Camera/CameraController.cpp.obj	881353f7c2fdad70
+126	1196	7995373782490523	GreyEngine/CMakeFiles/GreyEngine.dir/Source/Core/Camera/Camera.cpp.obj	24df783df230798a
+146	1035	7995373782646758	GreyEngine/CMakeFiles/GreyEngine.dir/Source/Platform/Windows/WindowsInput.cpp.obj	4c982947ce5387b9
+47	776	7995379215234616	GreyEngine/CMakeFiles/GreyEngine.dir/Source/Platform/OpenGL/OpenGLRendererAPI.cpp.obj	495a2733c138a7ba
+127	1208	7995368227021903	GreyEngine/CMakeFiles/GreyEngine.dir/Source/Platform/OpenGL/OpenGLTexture.cpp.obj	cc5a91634c1a603c
+44	1164	7995379215078387	GreyEngine/CMakeFiles/GreyEngine.dir/Source/AssetControl/Mesh.cpp.obj	a7e93eae8bb6d70c
+41	1049	7995376762670665	GreyEngine/CMakeFiles/GreyEngine.dir/Source/AssetControl/OBJLoader.cpp.obj	66992b4085d093f9
+38	1264	7995379215078387	GreyEngine/CMakeFiles/GreyEngine.dir/Source/Core/Application/Application.cpp.obj	26317c37f4f8da0a
+1264	1533	7995379227384553	GreyEngine/GreyEngine.lib	3f35a02d7e46898c
