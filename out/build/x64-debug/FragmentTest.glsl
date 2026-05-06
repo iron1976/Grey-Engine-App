@@ -12,6 +12,8 @@ uniform float VOffset;
 
 uniform float Scale; 
 
+uniform vec3 LightDir;
+
 
 void main()
 {
@@ -27,9 +29,9 @@ void main()
     
     vec3 color = texture(Tex, uv).rgb;
  
-    vec3 lightDir = normalize(vec3(1.0, 1.0, 1.0));
+    vec3 lightDirN = normalize(LightDir);
     float ambient = 0.3;
-    float diffuse = max(dot(n, lightDir), 0.0);
+    float diffuse = max(dot(n, lightDirN), 0.0);
     float lighting = ambient + diffuse * 0.7;
 
     FragColor = vec4(color * lighting, 1.0);
